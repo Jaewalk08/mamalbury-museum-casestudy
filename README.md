@@ -1,1 +1,1 @@
-# mamalbury-museum-casestudy
+# mamalbury museum casestudy
