@@ -44,26 +44,100 @@ html {
   a {
     text-decoration: none;
     color: inherit;
+  }
+  .link-button {
     border-bottom: 1.2px solid var(--black);
   }
   .subscription_join {
-    background-color: var(--black);
     border-bottom: 1.2px solid var(--white);
     padding: 0.5rem;
   }
   .footer__subscription_submit {
+    background-color: transparent;
     font-size: 0.6rem;
     color: var(--white);
     border: none;
     width: 16rem;
   }
   .join {
+    background-color: var(--black);
+    padding: 0.9rem;
     font-weight: 500;
     color: var(--white);
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
-
-
+  .container__icon-explore {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .icon-explore {
+    width: 85px;
+    height: 85px;
+    font-size: 0.8rem;
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon-explore__dark-red {
+    background-color: var(--dark-red);
+  }
+  .icon-explore__warm-red {
+    background-color: var(--warm-red);
+  }
+  .icon-explore__brown {
+    background-color: var(--brown);
+  }
+  .icon-explore__dark-brown {
+    background-color: var(--dark-brown);
+  }
+  .icon-explore__gray {
+    background-color: var(--gray);
+  }
+  .icon-explore__olive-green {
+    background-color: var(--olive-green);
+  }
+  /*
+  header
+  Navigation
+  */
+  .wrapper_nav-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white);
+    padding: rem;
+    margin: 0;
+    border: 1px solid red;
+    /* 
+    psition: fixed;
+    */
+  }
+  .container-nav-top {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+  }
+  .nav-list {
+    padding-right: 2rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+  .nav-list a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--black);
+  }
+  .nav-list a:hover {
+    color: var(--black);
+    border-bottom: 1.2px solid var(--black);
+    padding-bottom: .75rem;
+    margin-bottom: -.9rem;
+  }
   /* 
   study coding
   */
@@ -184,4 +258,7 @@ img {
 }
 .component-buttons__submit {
     width: 20%;
+}
+.nav-top-list {
+    width: 75%;
 }
