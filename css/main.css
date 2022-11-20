@@ -45,6 +45,9 @@ html {
     text-decoration: none;
     color: inherit;
   }
+    /* 
+  study coding
+  */
   .link-button {
     border-bottom: 1.2px solid var(--black);
   }
@@ -103,28 +106,36 @@ html {
   header
   Navigation
   */
+  .header {
+    position: sticky;
+  }
   .wrapper_nav-top {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background-color: var(--white);
-    padding: rem;
-    margin: 0;
+    margin-left: 20%;
+    margin-right: 20%;
     border: 1px solid red;
-    position: sticky;
   }
   .container-nav-top {
     text-decoration: none;
     list-style: none;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
   }
   .nav-list {
     display: inline-block;
     padding-right: 2rem;
     font-size: 0.9rem;
     font-weight: 400;
+  }
+  .nav-list:last-child {
+    padding-right: 0rem;
   }
   .nav-list a {
     text-decoration: none;
@@ -137,13 +148,13 @@ html {
     margin-bottom: -.9rem;
   }
   .fixed-logo {
-    display: inline-block;
+    display: block;
+    width: 3rem;
     position: sticky;
-    margin-top: rem;
+    margin-top: 5rem;
+    margin-left: -0.5;
   }
-  /* 
-  study coding
-  */
+
  .heading__section_hero {
     font-size: 1rem;
  }
