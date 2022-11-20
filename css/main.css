@@ -43,9 +43,26 @@ html {
   }
   a {
     text-decoration: none;
-    color: var(--black);
+    color: inherit;
     border-bottom: 1.2px solid var(--black);
   }
+  .subscription_join {
+    background-color: var(--black);
+    border-bottom: 1.2px solid var(--white);
+    padding: 0.5rem;
+  }
+  .footer__subscription_submit {
+    font-size: 0.6rem;
+    color: var(--white);
+    border: none;
+    width: 16rem;
+  }
+  .join {
+    font-weight: 500;
+    color: var(--white);
+    font-size: 0.8rem;
+  }
+
 
   /* 
   study coding
