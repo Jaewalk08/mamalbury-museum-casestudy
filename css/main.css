@@ -65,7 +65,7 @@ html {
 Conponents setting
 */
 div {
-    padding: 2rem 0rem 2rem;
+    padding: 1rem 0rem 1rem;
 }
 img {
     display: block;
@@ -120,9 +120,14 @@ img {
     gap: 1rem
 }
 .icon-color {
-    width: 65px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    color: var(--white);
 }
 .icon-color__1 {
     background-color: var(--dark-red);
@@ -143,5 +148,5 @@ img {
     background-color: var(--olive-green);
 }
 .component-icon_brown {
-    width: 10%
+    width: 15%
 }
