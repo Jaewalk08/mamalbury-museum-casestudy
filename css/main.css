@@ -1,15 +1,6 @@
-@font-face {
-    font-family: 'Untitled Sans', 'Untitled serif';
-    src: url(font/test_untitled_sans/test-untitled-sans-medium.woff2),
-         url(font/test_untitled_sans/test-untitled-sans-regular.woff2),
-         url(font/test_untitled_serif/test-untitled-serif-medium.woff2),
-         url(font/test_untitled_serif/test-untitled-serif-medium.woff2);
-}
 :root {
-    --font-san-serif: 'test-Untitled', sans-serif;
-    --font-serif: 'test-Untitled', serif;
     --font-san-serif: 'Yantramanav', sans-serif;
-    --font-serif: 'EB Garamond', serif;
+    --font-serif-sub: 'EB Garamond', serif;
     --black: #000;
     --white: #ffffff;
     /** icon cusser colors **/
@@ -38,13 +29,22 @@ html {
     font-family: var(--font-san-serif);
     font-weight: 500;
     color: var(--black);
-    font-size: 2rem;
     padding: 0.2rem;
     margin: 0;
+  }
+  h1 {
+    font-size: 1rem;
+  }
+  h2 {
+    padding: 1.5rem 0rem 1.5rem;
   }
   h3 {
     border-bottom: 1.2px solid var(--black);
   }
+
+  /* 
+  study coding
+  */
  .heading__section_hero {
     font-size: 1rem;
  }
@@ -54,7 +54,19 @@ html {
     background-color: var(--black);
     padding: 0.5rem;
  }
+.heading__contents-title {
+    font-size: 1rem;
+}
+.heading__footer-nav-title {
+    font-size: 1rem;
+}
 
+/*
+Conponents setting
+*/
+div {
+    padding: 2rem 0rem 2rem;
+}
 img {
     display: block;
     width: 55%;
@@ -70,7 +82,7 @@ img {
     width: 18%;
 }
 .heading__hero-heading {
-    width: 70%;
+    width: 80%;
 }
 .heading__whats_on-heading {
     width: 60%;
@@ -80,4 +92,56 @@ img {
 }
 .heading__footer-heading {
     width: 350%;
+}
+.heading__contents-title {
+    width: 75%;
+}
+.heading__footer_list-title {
+    width: 40%;
+}
+.component-mama_logo {
+    width: 15%;
+    padding: 0.5rem;
+}
+.component-mama_logo-black {
+    background-color: var(--black);
+}
+.component-mama_logo-white {
+    width: 15%;
+    padding-top: 1rem;
+}
+.lets_beggin {
+    border-bottom: 2px solid var(--black);
+    border-top: 2px solid var(--black);
+}
+.icon-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem
+}
+.icon-color {
+    width: 65px;
+    height: 50px;
+    border-radius: 50%;
+}
+.icon-color__1 {
+    background-color: var(--dark-red);
+}
+.icon-color__2 {
+    background-color: var(--warm-red);
+}
+.icon-color__3 {
+    background-color: var(--brown);
+}
+.icon-color__4 {
+    background-color: var(--dark-brown);
+}
+.icon-color__5 {
+    background-color: var(--gray);
+}
+.icon-color__6 {
+    background-color: var(--olive-green);
+}
+.component-icon_brown {
+    width: 10%
 }
