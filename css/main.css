@@ -193,15 +193,23 @@ Dropdown Navigation table
     font-size: 0.8rem;
     font-weight: 400;
     text-align: left;
+    padding: 0;  
 }
 .dropdown_opening-title {
+    text-align: left;
     font-size: 0.8rem;
     font-weight: 500;
+    padding: 0.3rem 0;
 }
 .dropdown_opening-dates {
     font-weight: 400;
+    padding: 0;
 }
 
+.dropdown_opening-free_entry {
+    padding: 2rem 0 2rem;
+    font-weight: 400;
+}
 /*
 Conponents setting -----------------conponents------settings------conponents------
 */
@@ -305,4 +313,13 @@ img {
 }
 .nav-top-list {
     width: 75%;
+}
+.nav-top-dropdown {
+    width: 10.3%;
+}
+.nav-top-dropdown__visit {
+    width: 13%;
+}
+.dropdown__opening-img {
+    width: 19%;
 }
