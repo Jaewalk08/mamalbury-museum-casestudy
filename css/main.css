@@ -41,6 +41,11 @@ html {
   h3 {
     border-bottom: 1.2px solid var(--black);
   }
+  a {
+    text-decoration: none;
+    color: var(--black);
+    border-bottom: 1.2px solid var(--black);
+  }
 
   /* 
   study coding
@@ -61,6 +66,7 @@ html {
     font-size: 1rem;
 }
 
+
 /*
 Conponents setting
 */
@@ -78,7 +84,7 @@ img {
 .conponents-img__footer {
     width: 45%;
 }
-.heading-img {
+.conponents-heading-img {
     width: 18%;
 }
 .heading__hero-heading {
@@ -148,5 +154,17 @@ img {
     background-color: var(--olive-green);
 }
 .component-icon_brown {
-    width: 15%
+    width: 5%
+}
+.component-link-buttons__visit {
+    width: 12%;
+}
+.component-link-buttons__classes {
+    width: 8%;
+}
+.component-link-buttons__support {
+    width: 6%;
+}
+.component-buttons__submit {
+    width: 20%;
 }
