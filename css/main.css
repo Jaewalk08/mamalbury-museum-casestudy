@@ -112,9 +112,7 @@ html {
     padding: rem;
     margin: 0;
     border: 1px solid red;
-    /* 
-    psition: fixed;
-    */
+    position: sticky;
   }
   .container-nav-top {
     text-decoration: none;
@@ -123,12 +121,12 @@ html {
     flex-direction: row;
   }
   .nav-list {
+    display: inline-block;
     padding-right: 2rem;
     font-size: 0.9rem;
     font-weight: 400;
   }
   .nav-list a {
-    display: inline-block;
     text-decoration: none;
     color: var(--black);
   }
@@ -137,6 +135,11 @@ html {
     border-bottom: 1.2px solid var(--black);
     padding-bottom: .75rem;
     margin-bottom: -.9rem;
+  }
+  .fixed-logo {
+    display: inline-block;
+    position: sticky;
+    margin-top: rem;
   }
   /* 
   study coding
