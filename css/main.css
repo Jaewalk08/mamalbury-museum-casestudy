@@ -269,14 +269,14 @@ img {
 }
 .heading__hero-heading {
     display: block;
-    width: 80%;
+    width: 20%;
 }
-.heading__whats_on-heading {
-    width: 60%;
+.heading__visit-heading {
+    width: 13%;
 }
 .heading__support-heading {
     display: block;
-    width: 170%;
+    width: 40%;
 }
 .heading__footer-heading {
     display: block;
