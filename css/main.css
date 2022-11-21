@@ -3,6 +3,7 @@
     --font-serif-sub: 'EB Garamond', serif;
     --black: #000;
     --white: #ffffff;
+    --gray-scale: #0000007e;
     /** icon cusser colors **/
     --dark-red: #771C16;
     --warm-red: #782F17;
@@ -230,13 +231,20 @@ Dropdown Navigation table
     font-weight: 400;
 }
 /*
-dropdown hover imm setup 
+dropdown contents and hover/hover img setup <<<?
 */
 .dropdown-visit {
   list-style: none;
   text-decoration: none;
   color: inherit;
-  position: relative;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+/* need to fix this effects */
+.dropdown-visit__link:hover {
+  color: var(-black);
+  font-weight: bolder;
+  transition: transform 200ms ease-in;
 }
 /*
 Conponents setting -----------------conponents------settings------conponents------
