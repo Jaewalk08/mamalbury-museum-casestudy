@@ -19,50 +19,52 @@ html {
   *, *:before, *:after {
     box-sizing: inherit;
   }
-  body {
-    font-family: var( --font-san-serif);
-    font-weight: 400;
-    font-size: 16px;
-    color: var(--black);
-    line-height: 1.2;
-    margin: 0;
-    padding: 0;
+html {
+  background-color: lightgray;
+}
+body {
+  font-family: var( --font-san-serif);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--black);
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
   }
-  /* this is body margin create */
-  .full-body-wrapper {
-    margin: 0 15% 0;
-  }
-  .fixed-logo {
-    display: block;
-    width: 2.65rem;
-    position: sticky;
-    top: 9.12rem;
-    margin-left: -0.5;
-  }
-  h1, h2, h3, h4, h5 {
-    font-family: var(--font-san-serif);
-    font-weight: 500;
-    color: var(--black);
-    padding: 0.2rem;
-    margin: 0;
-  }
-  h1 {
-    font-size: 1rem;
-  }
-  h2 {
-    padding: 1.5rem 0rem 1.5rem;
-  }
-  h3 {
-    border-bottom: 1.2px solid var(--black);
-  }
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
+  /* this is body margin create  -----------^.-.^------------ */
+.full-body-wrapper {
+  margin: 0 5% 0 25%;
+}
+.fixed-logo {
+  display: block;
+  width: 2.65rem;
+  position: sticky;
+  top: 9.12rem;
+  margin-left: -0.5;
+}
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-san-serif);
+  font-weight: 500;
+  color: var(--black);
+  padding: 0.2rem;
+  margin: 0;
+}
+h1 {
+  font-size: 1rem;
+}
+h2 {
+  padding: 1.5rem 0rem 1.5rem;
+}
+h3 {
+  border-bottom: 1.2px solid var(--black);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
-    /* 
-  study coding
-  */
+  /*  study coding -----------^.-.^------------ */
+  
   .link-button {
     border-bottom: 1.2px solid var(--black);
   }
@@ -117,10 +119,7 @@ html {
   .icon-explore__olive-green {
     background-color: var(--olive-green);
   }
-  /*
-  header
-  Navigation
-  */
+  /*  header /  Navigation    -----------^.-.^------------ */
   .header {
     position: sticky;
     top: 10px;
@@ -182,6 +181,7 @@ html {
   .nav-list-link:hover::after {
     transform: scaleX(1);
   }
+
   /*
   .nav-list a:hover {
     color: var(--black);
@@ -190,6 +190,7 @@ html {
     margin-bottom: -.9rem;
   }
   */
+
  .heading__section_hero {
     font-size: 1rem;
  }
@@ -230,9 +231,8 @@ Dropdown Navigation table
     padding: 2rem 0 2rem;
     font-weight: 400;
 }
-/*
-dropdown contents and hover/hover img setup <<<?
-*/
+/* dropdown contents and hover/hover img setup <<<?   -----------^.-.^------------ */
+
 .dropdown-visit {
   list-style: none;
   text-decoration: none;
@@ -249,8 +249,38 @@ dropdown contents and hover/hover img setup <<<?
 /*
 Conponents setting -----------------conponents------settings------conponents------
 */
+.jae {
+  font-family: var(--font-san-serif);
+  font-size: 2.5rem;
+  text-align: left;
+  color: var(--black);
+}
+.web-study_nav {
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 2;
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: 1;
+  top: 0.2rem;
+  left: 4rem;
+}
+.study-nav {
+  text-decoration: none;
+  list-style: none;
+  padding-left: 0;
+}
+.atom-heading  {
+  padding-left: 0;
+  font-weight: bold;
+}
+.atom-list {
+  font-weight: 400;
+  padding-left: 0;
+}
 div {
-    padding: 1rem 0rem 1rem;
+    padding: 0rem 1rem;
 }
 img {
     padding: 0.2rem 0rem 0rem;
