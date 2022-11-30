@@ -174,19 +174,26 @@ transform: scaleX(1);
   font-weight: 500;
 }
 .components_headings__section_hero {
-font-size: 1rem;
+font-size: 0.8rem;
+}
+.components_headings__page {
+  font-size: 2rem;
 }
 .components_headings__footer {
-font-size: 5rem;
+font-size: 4.3rem;
 color: var(--white);
 background-color: var(--black);
-padding: 0.5rem;
+padding: 1rem;
 }
 .components_headings__contents-title {
-font-size: 1rem;
+font-size: 0.85rem;
 }
 .components_headings__footer-nav-title {
-font-size: 1rem;
+font-size: 0.9rem;
+color: var(--white);
+background-color: var(--black);
+/* change */
+padding: 1rem;
 }
 
 /*
@@ -279,6 +286,10 @@ color: var(--dark-gray);
 font-weight: 400;
 color: var(--dark-gray);
 }
+/* mian starts here --------*_*------------------*/
+.fontface {
+  font-size: 2rem;
+  }
 .specification {
 margin-left: 0;
 list-style: none;
@@ -291,7 +302,6 @@ padding-bottom: 0.8rem;
 .specification-list {
 font-weight: 500;
 }
-/* mian starts here --------*_*------------------*/
 .full-body-wrapper {
 margin: -4rem 5% 0 28%;
 padding-left: 8px;
@@ -324,10 +334,28 @@ padding: 1rem 0 0 1rem;
 margin-bottom: 0;
 }
 .compoment-detaile-headings {
-border-bottom: 2px soild var(--dark-gray);
+font-weight: 500;
+font-size: 0.8rem;
+color: var(--dark-gray);
 }
-.fontface {
-font-size: 2rem;
+.row-flex {
+  display: flex;
+  flex-direction: row;
+  padding-right: 50px;
+  justify-content:space-between;
+  align-items: center;
+  padding-right: 15rem;
+}
+.row-flex__small-padding {
+  align-items: flex-start;
+  padding-right: 2rem;
+  padding-bottom: 1.5rem;
+}
+.colume-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
 }
 .icon-container {
 display: flex;
@@ -400,4 +428,22 @@ width: 65%;
   width: 7%;
   margin: 0;
   padding: 0;
+}
+.component-icon_brown__2 {
+  border-radius: 50%;
+  width: 45%;
+  margin: 0;
+  padding: 0;
+}
+.screen_shot_reduce__link {
+  width: 40%;
+}
+.screen_shot_reduce__link-classes {
+  width: 26%;
+}
+.screen_shot_reduce__link-support {
+  width: 26%;
+}
+.screen_shot_reduce__link-submit {
+  width: 45%;
 }
