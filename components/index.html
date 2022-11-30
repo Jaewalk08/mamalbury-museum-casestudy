@@ -14,39 +14,46 @@
 
     <body>
      <!--fixed logo white and black-->
-          <a href="#!"><img class="fixed-logo fixed-logo__white" src="img/mama_logo-white.png" alt="mama logo"></a>
+          <a href="index.html"><img class="fixed-logo fixed-logo__white" src="img/mama_logo-white.png" alt="mama logo"></a>
 
-          <div class="web-study_nav">
-               <p class="jae">Jaehyun</p>
-                    <dl class="component-nav-contents">
-                         <dt id="typo" class="component-nav__heading">Typography</dt>
-                              <dd class="">Untitled Sans Regular</dd>
-                              <dd class="component-nav-list">Exsamples and Codings</dd>
-                         <dt id="color" class="component-nav__heading">Colors and Logo</dt>
-                              <dd class="component-nav-heading">Primery Colors</dd>
-                              <dd class="component-nav-list">Sub-colors</dd>
-                         <dt id="atoms" class="component-nav__heading">Atoms</dt>
-                              <dt class="component-nav__sub-heading">Links | buttons | icons</dt>
-                              <dt class="component-nav__sub-heading">Navigation</dt>
-                                   <dd class="component-nav-list">Header Navigation</dd>
-                                   <dd class="component-nav-list">Footer Navigation</dd>
-                              <dt class="component-nav__sub-heading">Page Contents</dt>
-                                   <dd class="component-nav-list">Hero</dd>
-                                   <dd class="component-nav-list">Pages</dd>
-                    </dl>
-          </div> <!--web-study nav div-->
-<div class="full-body-wrapper">
-          <div class="lets_beggin">
-          <h1>MURRRAY ART MUSEUM ALBURY CASE STUDY</h1>
-               <img class="component-mama_logo-white"
-                    scrset="img/component-mama_logo-white.png 2x"
-                    src="img/component-mama_logo-white.png"
-                    alt="mama museum logo">
-          </div>
+          <header class="web-study_nav">
+               <h1 class="components_heading">MURRRAY ART MUSEUM ALBURY</h1>
+               <h2 class="components_heading components_heading-second">CASE STUDY</h2>
+          
+               <dl class="component-nav-contents">
+                    <dt class="component-nav__heading"><a href="#typography">Typography</a></dt>
+                         <dd class="component-nav-list">Untitled Sans Regular</dd>
+                         <dd class="component-nav-list">Exsamples and Codings</dd>
+                    <dt id="color" class="component-nav__heading"><a href="index.html#colorlogo"> Colors and Logo</a></dt>
+                         <dd class="component-nav-list">Primery Colors</dd>
+                         <dd class="component-nav-list">Sub-colors</dd>
+                    <dt id="atoms" class="component-nav__heading">Atoms</dt>
+                         <dt class="component-nav__sub-heading">Links | buttons | icons</dt>
+                         <dt class="component-nav__sub-heading">Navigation</dt>
+                              <dd class="component-nav-list">Header Navigation</dd>
+                              <dd class="component-nav-list">Footer Navigation</dd>
+                         <dt class="component-nav__sub-heading">Page Contents</dt>
+                              <dd class="component-nav-list">Hero</dd>
+                              <dd class="component-nav-list">Pages</dd>
+               </dl>
+          </header> <!--web-study nav div-->
+       <section class="full-body-wrapper">
+          
+     <article class="container">
+          <h3 class="contents-heading" id="typography">Typography Defaults</h3>
+     <hr class="dividing_lines">
 
-          <h2>Typography Defaults</h2>
+          <p class="fontface">Untitled Sans Regular</p>
+               <dl class="specification">
+                    <dt class="specification-list">Untitled Sans Regular (font weight: 400)</dt>
+                    <dd class="usage-list">Menu, information, paragraph, and non-targeted texts.</dd>
+                    <dt class="specification-list">Untitled Sans Medium (font weight: 500)</dt>
+                    <dd class="usage-list">Used for link bottons, selected menu, heading and sub-titles.</dd>
+               </dl>
 
-               <h3>Body</h3> 
+     <hr class="dividing_lines">
+
+          <h4 class="exsample-heading">BODY</h4> 
                <div class="conponents_img">
                     <img scrset="img/article__visit-paragraph-intro.png 2x"
                          src="img/article__visit-paragraph-intro.png"
@@ -54,9 +61,8 @@
                     <img srcset="img/article__classes-paragraph-intro.png 2x"
                          src="img/article__classes-paragraph-intro.png"
                          alt="conponents image">
-                    <img 
-                    class="conponents-img__support"
-                    srcset="img/articel__support-paragraph-intro.png 2x"
+                    <img class="conponents-img__support"
+                         srcset="img/articel__support-paragraph-intro.png 2x"
                          src="img/articel__support-paragraph-intro.png"
                          alt="conponents image">
                     <img class="conponents-img__footer"
@@ -65,9 +71,8 @@
                          alt="conponents image">
                </div>
                
-               <h3>Body Coding</h3>
-               <div class="body_text">
-
+          <h4 class="exsample-heading">BODY CODING</h4>
+               <div class="conponents_coding">
                     <p class="body-text">
                     Come experience everything the museum has to offer from 
                     a wide range experiences and activities that every member 
@@ -88,10 +93,10 @@
                     the memories, culture, tradition and hopes of Aboriginal 
                     and Torres Strait Islander people that contribute to our community.
                     </p>
-               </div>
+               </div><!--body texts-->
 
-               <h3>Headings: h1, h2, h3, h4...</h3>
-               <div class="conponents-heading-img">
+          <h4 class="exsample-heading">HEADINGS: h1, h2, h3, h4...</h4>
+               <div class="conponents_img conponents-heading-img">
                     <img class="heading heading__hero-heading"
                          srcset="img/hero_heading.png x2"
                          src="img/hero_heading.png"
@@ -113,24 +118,34 @@
                          src="img/footer_lists-title__about.png"
                          alt="headings">
                </div>
-          
-          <h3>Heading Coding: h1, h2, h3, h4...</h3>
-          <div class="headings">
-               <p>h1</p>
-               <h4 class="heading heading__section_hero">MURRAY ART MUSEUM ALBURY</h4>
-               <p>h2</p>
-               <h5 class="heading heading__page">What&#39;s On</h5>
-               <p>h2</p>
-               <h5 class="heading heading__footer">We are an Art Museum</h5>
-               <p>h3</p>
-               <h5 class="heading heading__contents-title">Taerim Claire Jeon,</h5>
-               <p>h4</p>
-               <h5 class="heading heading__footer-nav-title">About</h5>
-          </div>
 
-          <h2>Colors</h2>
-          <h3>Main color: black and white</h3>
-          <div class="color-img">
+     <hr class="dividing_coding">
+
+          <h4 class="exsample-heading" >Heading Coding: h1, h2, h3, h4...</h4 >
+               <div class="conponents_coding">
+                    <p>h1</p>
+                    <h4 class="heading heading__section_hero">MURRAY ART MUSEUM ALBURY</h4>
+                    <p>h2</p>
+                    <h5 class="heading heading__page">What&#39;s On</h5>
+                    <p>h2</p>
+                    <h5 class="heading heading__footer">We are an Art Museum</h5>
+                    <p>h3</p>
+                    <h5 class="heading heading__contents-title">Taerim Claire Jeon,</h5>
+                    <p>h4</p>
+                    <h5 class="heading heading__footer-nav-title">About</h5>
+               </div>
+        </article>
+
+     <hr class="dividing_lines">
+
+        <article class="container">
+
+          <h3 id="colorlogo">COLOR AND LOGO</h3>
+
+     <hr class="dividing_lines">
+
+          <h4>Main color: black and white</h4>
+          <div class="conponents_coding color-img">
                <p>Black #000000 | Background white #ffffff</p>
                <img class="component-mama_logo"
                     scrset="img/conponents-mama_logo_b.png 2x"
@@ -143,9 +158,9 @@
                     alt="mama museum logo">
           </div>
 
-          <h3> Sub colors: Icons and buttons</h3>
-          <div>
-               <div class="icon-container">
+          <h4> Sub colors: Icons and buttons</h4>
+          <div class="conponents_coding">
+               <div class="conponents_coding icon-container">
                     <div class="icon-color icon-color__1"><p>#771C16</p></div>
                     <div class="icon-color icon-color__2"><p>#782F17</p></div>
                     <div class="icon-color icon-color__3"><p>#5D452D</p></div>
@@ -154,16 +169,20 @@
                     <div class="icon-color icon-color__6"><p>#5A682E</p></div>
                </div>
 
-               <h4>Explore Icon</h4>
+               <h5>Explore Icon</h5>
                <img class="component-icon_brown"
-               scrset="img/article-icon__brown.png 2x"
-               src="img/article-icon__brown.png"
-               alt="explore icon">
-          </div>
+                    scrset="img/article-icon__brown.png 2x"
+                    src="img/article-icon__brown.png"
+                    alt="explore icon">
+          </div> <!--sub colors-->
+        </article>
 
-          <h3>Links | buttons | icons </h3>
-          <div>
+          <h4>Links | buttons | icons </h4>
+          <div class="conponents_coding">
                <h4>Action link and buttons</h4>
+
+     <hr class="dividing_coding">
+
                <img class="component-link-buttons__visit"
                scrset="img/article__visit-link-button.png 2x"
                src="img/article__visit-link-button.png"
@@ -182,7 +201,7 @@
                alt="submit button">
           </div>
 
-          <div>
+          <div class="conponents_coding">
                <h4>Codding: Action link and button </h4>
                <p><a class="link-button link-button__visit-us" href="https://www.mamalbury.com.au/events">
                     Events &#38; Experiences <i class="fa-solid fa-arrow-right-long"></i></a></p>
@@ -194,16 +213,17 @@
                     type="text" id="email" name="email"
                     placeholder="Email address" required>Join</a></p>
           </div>
-          
-          <div>
+     
                <h4>Icon: Explore mouse cusor</h4>
+          <div class="conponents_coding">
                <img class="component-icon_brown"
                scrset="img/article-icon__brown.png 2x"
                src="img/article-icon__brown.png"
                alt="explore icon">
           </div>
-          <div>
-               <h4>Coding: Icon: Explore mouse cusor </h4>
+
+          <h4>Coding: Icon: Explore mouse cusor </h4>
+          <div class="conponents_coding">
                <div class="container__icon-explore">
                <div class="icon-explore icon-explore__dark-red"><p>Explore</p></div>
                <div class="icon-explore icon-explore__warm-red"><p>Explore</p></div>
@@ -214,15 +234,15 @@
                </div>
           </div>
 
-          <h2>Navigation</h2>
-          <h3>Fixed top navigation</h3>
+          <h3>Navigation</h3>
+          <h4>Fixed top navigation</h4>
                <div>
                <img class="nav-top-list"
                scrset="img/nav_list-top.png 2x"
                src="img/nav_list-top.png"
                alt="navigation menu">
                </div>
-          <h3>Coding: Fixed top navigation </h3>
+          <h4>Coding: Fixed top navigation </h4>
 
           <div class="wrapper_nav-top">
                <ul class="container-nav-top container-nav-top__list">
@@ -238,7 +258,7 @@
                </div>
           </div>
 
-          <h3> Navigation Dropdown</h3>
+          <h4> Navigation Dropdown</h4>
                <div>
                     <img class="nav-top-dropdown nav-top-dropdown__visit"
                     scrset="img/nav-dropdown__visit.png 2x"
@@ -252,7 +272,7 @@
                     alt="navigation dropdown menu lists">
                </div>
 
-               <h3> Coding: Navigation slideout and Oepning hours </h3>
+               <h4> Coding: Navigation slideout and Oepning hours </h4>
                <div id="navVisit" class="nav_left_container">
                     <ul class="nav_left__visit">
                          <li><a class="slideout-visit__link" href="https://www.mamalbury.com.au/plan-your-trip">Plan Your Trip</a>
@@ -325,7 +345,7 @@
                     </table>
                </div><!--table-->
 
-               <h3>Headings</h3>
+               <h4>Headings</h4>
                <div class="heading-img">
                     <img class="heading heading__hero-heading"
                          srcset="img/hero_heading.png x2"
@@ -346,7 +366,7 @@
                          alt="h2">
                </div>
 
-               <h3>Coding: headings</h3>
+               <h4>Coding: headings</h4>
                <div>
                     <h4 class="heading heading__section_hero">MURRAY ART MUSEUM ALBURY</h4>
                     <h5 class="heading heading__page">What's On</h5>
@@ -357,6 +377,6 @@
                </div><!--heading coding div-->
           
                
-</div><!--full body wrapper-->
+          </section><!--full body wrapper-->
     </body>
 </html>
