@@ -310,8 +310,9 @@ margin-top: -0.4em;
 }
 .components_img, .components_coding {
 background-color: var(--white);
-padding:1rem;
+padding: 1rem;
 margin-top: 0;
+margin-bottom: 1rem;
 }
 .exsample-heading {
 letter-spacing: 0.5rem;
@@ -331,7 +332,10 @@ font-size: 2rem;
 .icon-container {
 display: flex;
 flex-direction: row;
-gap: 1rem
+gap: 2rem;
+margin: 0;
+padding: 0;
+background: none;
 }
 .icon-color {
 width: 60px;
@@ -361,7 +365,21 @@ background-color: var(--gray);
 .icon-color__6 {
 background-color: var(--olive-green);
 }
-
+.atom-logo {
+  display: flex;
+  flex-direction: row;
+  padding-right: 10px;
+  background: none;
+}
+.logo-color_flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.component_coding__explore-flex {
+  padding: 2rem;
+  background: none;
+}
 
 /***
 _____screen shot images adjustments only_____
@@ -373,4 +391,13 @@ padding: 0.5rem;
 }
 .screen_shot_reduce {
 width: 65%;
+}
+.screen_shot_reduce__logo {
+  width: 20%;
+}
+.component-icon_brown {
+  border-radius: 50%;
+  width: 7%;
+  margin: 0;
+  padding: 0;
 }
