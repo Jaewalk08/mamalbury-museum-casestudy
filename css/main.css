@@ -286,8 +286,6 @@ slideout Navigation table
 .slideout-hover-imgs:hover::after {
   transform: scaleX(1);
 }
-
-  transform: scaleX(1);
 /*
 Components setting -----------------components------settings------components------
 */
@@ -377,9 +375,9 @@ color: var(--dark-gray);
   margin-top: 0;
   margin-bottom: 1rem;
 }
-.components_img>*, .components_coding>*, .row-flex>*, .col-flex>* {
+/*.components_img>*, .components_coding>*, .row-flex>*, .col-flex>* {
   border: 1px solid red;
-}
+}*/
 .exsample-heading {
   letter-spacing: 0.5rem;
   font-size: 1.1rem;
