@@ -218,17 +218,19 @@ background-color: var(--olive-green);
   font-weight: 300;
   line-height: 1.5;
 }
-.nav_left__contents-list:hover {
-  
-}
 /*
 slideout Navigation table
 */
+.nav-slideout-wrapper {
+  position: relative;
+}
 .slideout_nav-top__opening {
+  position: absolute;
+  top: 24.8rem;
+  left: 0;
   font-size: 0.8rem;
   font-weight: 400;
   text-align: left;
-  padding: 0;  
 }
 .slideout_opening-title {
   text-align: left;
@@ -239,6 +241,7 @@ slideout Navigation table
 .slideout_opening-dates {
   font-weight: 400;
   padding: 0;
+  margin-left: 0;
 }
 .slideout_opening-free_entry {
   padding: 2rem 0 2rem;
@@ -249,7 +252,7 @@ slideout Navigation table
 }
 /* slideout contents and hover/hover img setup <<<?   -----------^.-.^------------ */
 
-.slideout-visit {
+.slideout_link {
   list-style: none;
   text-decoration: none;
   color: inherit;
@@ -257,11 +260,34 @@ slideout Navigation table
   line-height: 1.5;
 }
 /* need to fix this effects */
-.slideout-visit__link:hover {
+.slideout_link:hover {
   color: var(-black);
   font-weight: bolder;
   transition: transform 200ms ease-in;
 }
+.slideout_link--plan {
+  position: relative;
+}
+.slideout_link--plan:hover::before {
+  color: var(--gray-scale);
+}
+.slideout-hover-imgs::after {
+  content: "";
+  position: absolute;
+  left: 5rem;
+  top: 1rem;
+  width: 50%;
+  height: auto;
+  background-image: url(img/slideout__visit__plan-trip.jpg);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 200ms ease-in;
+}
+.slideout-hover-imgs:hover::after {
+  transform: scaleX(1);
+}
+
+  transform: scaleX(1);
 /*
 Components setting -----------------components------settings------components------
 */
@@ -495,8 +521,9 @@ _____screen shot images adjustments only_____
   width: 140%;
 }
 .nav-top-slideout__visit {
-  width: 29%;
+  width: 30%;
 }
 .slideout__opening-img {
-  width: 55%;
+  width: 45%;
+  padding-top: 11rem;
 }
