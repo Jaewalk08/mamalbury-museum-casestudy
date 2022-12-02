@@ -300,8 +300,8 @@ slideout Navigation table
 .footer_contents--heading {
   font-weight: 500;
 }
-.footer-contents--list {
-  font-weight: 400;
+.footer_contents--list {
+  font-weight: 300;
 }
 
 /*
@@ -352,7 +352,7 @@ font-weight: bolder;
 color: var(--dark-gray);
 }
 .component-nav-list {
-font-weight: 400;
+font-weight: 300;
 color: var(--dark-gray);
 }
 /* mian starts here --------*_*------------------*/
