@@ -52,9 +52,10 @@ a {
   text-decoration: none;
   color: inherit;
 }
-ul, li {
+ul, li, dl, dt, dd {
   list-style: none;
   padding-left: 0;
+  margin-left: 0;
 }
 
 /*  study coding -----------^.-.^------------ */
@@ -286,36 +287,53 @@ slideout Navigation table
 }
 */
 
+/* footer Coding starts here*/
+.footer_contents--wrapper {
+  padding: 1rem;
+  background-color: var(--black);
+}
+.footer_contents {
+  font-size: 0.9rem;
+  color: var(--white);
+  line-height: 1.5;
+}
+.footer_contents--heading {
+  font-weight: 500;
+}
+.footer-contents--list {
+  font-weight: 400;
+}
+
 /*
 Components setting -----------------components------settings------components------
 */
 .web-study_nav {
   height: 100%;
-  width: 18%;
+  width: 16%;
   position: fixed;
   z-index: 1;
   top: 2rem;
-  left: 4.5rem;
+  left: 5rem;
   padding-top: 1rem;
   background-color: lightgray;
 }
 .components_heading {
   font-family: var(--font-san-serif);
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-align: center;
   color: var(--black);
   line-height: 0.5;
 }
 .components_heading-second {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   letter-spacing: 0.5rem;
   border-bottom: 3px solid var(--black);
   line-height: 0.4;
 }
 .component-nav-contents>* {
-  font-size: 1rem;
-  line-height: 2;
+  font-size: 0.9rem;
+  line-height: 1.8;
   text-decoration: none;
   list-style: none;
   margin-left: 0;
@@ -325,8 +343,8 @@ Components setting -----------------components------settings------components----
 .component-nav__heading  {
 color: var(--black);
 font-weight: bold;
-font-size: 1.2rem;
-line-height: 2;
+font-size: 1rem;
+line-height: 1.8;
 padding-top: 0.7rem;
 }
 .component-nav__sub-heading {
@@ -354,7 +372,7 @@ color: var(--dark-gray);
   font-weight: 500;
 }
 .full-body-wrapper {
-  margin: 0 5% 0 28%;
+  margin: 0 5% 0 27%;
   padding-left: 8px;
 }
 .contents-heading {
@@ -524,4 +542,7 @@ _____screen shot images adjustments only_____
 .slideout__opening-img {
   width: 45%;
   padding-top: 11rem;
+}
+.nav-footer-list {
+  width: 25%;
 }
