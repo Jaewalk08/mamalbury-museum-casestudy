@@ -268,10 +268,8 @@ slideout Navigation table
 .slideout_link--plan {
   position: relative;
 }
-.slideout_link--plan:hover::before {
-  color: var(--gray-scale);
-}
-.slideout-hover-imgs::after {
+/*
+.slideout-hover-img::after {
   content: "";
   position: absolute;
   left: 5rem;
@@ -286,6 +284,8 @@ slideout Navigation table
 .slideout-hover-imgs:hover::after {
   transform: scaleX(1);
 }
+*/
+
 /*
 Components setting -----------------components------settings------components------
 */
