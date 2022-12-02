@@ -27,10 +27,10 @@ html {
 }
 body {
   font-family: var( --font-san-serif);
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: 300;
+  font-size: 13px;
   color: var(--black);
-  line-height: 1.3;
+  line-height: 1.4;
   margin: 0;
   padding: 0;
 }
@@ -43,7 +43,7 @@ body {
   margin-left: -0.5;
   padding: 3rem 0;
 }
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-san-serif);
   font-weight: 500;
   color: var(--black);
@@ -59,10 +59,20 @@ ul, li, dl, dt, dd {
 }
 
 /*  study coding -----------^.-.^------------ */
-
+.page-text_intro {
+  font-weight: 300;
+  font-size: 1rem;
+}
+.page-text_intro--mememver, .page-tex_intro--join {
+  font-size: 0.8rem;
+  color: var(--white);
+  line-height: 1.5;
+  background-color: var(--black);
+  padding: 0.5rem;
+}
 .link-button {
   font-weight: 500;
-  font-size: 0.85rem;
+  font-size: 1rem;
   border-bottom: 1.2px solid var(--black);
   padding-bottom: 0.2rem;
 }
@@ -75,7 +85,7 @@ ul, li, dl, dt, dd {
 }
 .footer__subscription_submit {
   background-color: transparent;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   color: var(--white);
   border: none;
   width: 16rem;
@@ -84,7 +94,7 @@ ul, li, dl, dt, dd {
   padding: 0.9rem;
   font-weight: 500;
   color: var(--white);
-  font-size: 0.65rem;
+  font-size: 0.7rem;
 }
 .link-button__close, .link-button__search-mama {
   font-size: 0.9rem;
@@ -190,6 +200,13 @@ background-color: var(--olive-green);
 }
 .components_headings {
   font-weight: 500;
+  margin: 0;
+  padding: 1rem 0;
+}
+.compoment-detaile-title {
+  font-weight: 500;
+  font-size: 1rem;
+  padding-bottom: 1.5rem;
 }
 .components_headings__section_hero {
   font-size: 0.8rem;
@@ -308,7 +325,7 @@ slideout Navigation table
 Components setting -----------------components------settings------components------
 */
 .web-study_nav {
-  height: 100%;
+  height: auto;
   width: 16%;
   position: fixed;
   z-index: 1;
@@ -497,7 +514,7 @@ _____screen shot images adjustments only_____
   padding: 0.8rem;
 }
 .screen_shot_reduce {
-  width: 65%;
+  width: 63%;
 }
 .screen_shot_reduce__logo {
   width: 35%;
