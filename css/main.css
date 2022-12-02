@@ -203,15 +203,6 @@ background-color: var(--olive-green);
   padding: 1rem;
   position: relative;
 }
-.components_headings__footer:hover {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  -webkit-transition: background-color 2s ease-out;
-  -
-  -webkit-text-fill-color: var(--black);
-}
 .components_headings__contents-title {
   font-size: 0.85rem;
 }
@@ -228,38 +219,37 @@ background-color: var(--olive-green);
   line-height: 1.5;
 }
 .nav_left__contents-list:hover {
-  target: var(--black);
   
 }
 /*
-slidout Navigation table
+slideout Navigation table
 */
-.slidout_nav-top__opening {
+.slideout_nav-top__opening {
   font-size: 0.8rem;
   font-weight: 400;
   text-align: left;
   padding: 0;  
 }
-.slidout_opening-title {
+.slideout_opening-title {
   text-align: left;
   font-size: 0.8rem;
   font-weight: 500;
   padding: 0.3rem 0;
 }
-.slidout_opening-dates {
+.slideout_opening-dates {
   font-weight: 400;
   padding: 0;
 }
-.slidout_opening-free_entry {
+.slideout_opening-free_entry {
   padding: 2rem 0 2rem;
   font-weight: 400;
 }
-.slidout_opening-title {
+.slideout_opening-title {
   text-align: left;
 }
-/* slidout contents and hover/hover img setup <<<?   -----------^.-.^------------ */
+/* slideout contents and hover/hover img setup <<<?   -----------^.-.^------------ */
 
-.slidout-visit {
+.slideout-visit {
   list-style: none;
   text-decoration: none;
   color: inherit;
@@ -267,7 +257,7 @@ slidout Navigation table
   line-height: 1.5;
 }
 /* need to fix this effects */
-.slidout-visit__link:hover {
+.slideout-visit__link:hover {
   color: var(-black);
   font-weight: bolder;
   transition: transform 200ms ease-in;
