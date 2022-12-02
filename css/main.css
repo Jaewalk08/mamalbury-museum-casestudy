@@ -369,13 +369,13 @@ color: var(--dark-gray);
 .dividing_lines {
   margin-top: -0.4em;
 }
-.components_img, .components_coding {
+.components {
   background-color: var(--white);
-  padding: 1rem;
+  padding: 0.8rem;
   margin-top: 0;
   margin-bottom: 1rem;
 }
-/*.components_img>*, .components_coding>*, .row-flex>*, .col-flex>* {
+/*.components>*, .row-flex>*, .col-flex>* {
   border: 1px solid red;
 }*/
 .exsample-heading {
@@ -476,7 +476,7 @@ _____screen shot images adjustments only_____
 
 .screen_shot_imgs {
   display: block;
-  padding: 0.5rem;
+  padding: 0.8rem;
 }
 .screen_shot_reduce {
   width: 65%;
