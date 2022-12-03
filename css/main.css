@@ -167,13 +167,15 @@ background-color: var(--olive-green);
 /****
 cursor coding
 ***/
-.article-container {
-  position: relative;
-}
-div.cursors div.circle{
+/* cursor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}*/
+div.cursors div.circle {
   position: absolute;
-  top: 30pt;
-  left: 30px;
+  top: 0px;
+  left: 0px;
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -181,24 +183,26 @@ div.cursors div.circle{
   pointer-events: none;
   transition: (-50%, -50%);
 }
-div.cursors .circle .explore {
+div.cursors div.circle span.explore {
   position: absolute;
-  top: 0;
+  top: 0px;
   left: 40px;
   width: 300px;
 
   font-size: 0.8rem;
   font-weight: 300;
   color: var(--whtie);
+  text-align: center;
 
   opacity: 0;
-  transition: scale(0) 0.5s;
-}
-.div.cursors .circle .explore.visible {
-  width: 100%;
-  height: 100%;
-  opacity: 1;
   transition: opacity 0.5s;
+  transform: scale(0, 0);
+  transform-origin: left;
+  transition: transform 200ms ease-in;
+}
+.div.cursors div.circle span.explore.visible {
+  opacity: 1;
+  transform: scale(1, 1);
 }
 .circle-explore__brown {
   background-color: var(--brown);
