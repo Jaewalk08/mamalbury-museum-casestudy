@@ -85,6 +85,25 @@ ul, li, dl, dt, dd {
   border-bottom: 1.2px solid var(--white);
   padding: 0.8rem;
 }
+.container__circle-explore {
+  display: flex;
+  flex-direction: colume;
+  gap: 1rem;
+}
+.circle-explore {
+  width: 4.3rem;
+  height: 4.3rem;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  color: var(--white);
+}
+.circle-explore__brown {
+  background-color: var(--brown);
+}
 /* footer coding --------------------------------footer start*/
 .footer_container {
   display: block;
@@ -115,32 +134,33 @@ ul, li, dl, dt, dd {
   flex-direction: row;
   gap: 1rem;
 }
-.icon-explore {
+.components-explore {
   width: 4.3rem;
   height: 4.3rem;
-  font-size: 0.8rem;
-  color: var(--white);
   border-radius: 50%;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  font-size: 0.8rem;
+  color: var(--white);
 }
-.icon-explore__dark-red {
+.components_circle-explore__dark-red {
   background-color: var(--dark-red);
 }
-.icon-explore__warm-red {
+.components_circle-explore__warm-red {
   background-color: var(--warm-red);
 }
-.icon-explore__brown {
+.components_circle-explore__brown {
   background-color: var(--brown);
 }
-.icon-explore__dark-brown {
+.components_circle-explore__dark-brown {
   background-color: var(--dark-brown);
 }
-.icon-explore__gray {
+.components_circle-explore__gray {
 background-color: var(--gray);
 }
-.icon-explore__olive-green {
+.components_circle-explore__olive-green {
 background-color: var(--olive-green);
 }
 /*  header /  Navigation    -----------^.-.^------------ */
@@ -568,4 +588,11 @@ _____screen shot images adjustments only_____
 }
 .nav-footer-list {
   width: 25%;
+}
+.screen_shot_imgs--button {
+  width: 88%;
+}
+.article-imgs__visit {
+  padding-top: 2.2rem;
+  width: 70%;
 }
