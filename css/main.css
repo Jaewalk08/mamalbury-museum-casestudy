@@ -200,7 +200,6 @@ div.cursors .circle .explore {
   opacity: 1;
   transition: opacity 0.5s;
 }
-
 .circle-explore__brown {
   background-color: var(--brown);
 }
