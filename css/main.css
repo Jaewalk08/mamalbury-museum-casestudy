@@ -4,7 +4,8 @@
   --font-serif-sub: 'EB Garamond', serif;
   --black: #000;
   --white: #ffffff;
-  --gray-scale: #0000007e;
+  --gray-scale: #ffffff00;
+  --gray-scale-0: rgba(255, 255, 255, 0);
   /** icon cusser colors **/
   --dark-red: #771C16;
   --warm-red: #782F17;
@@ -62,6 +63,7 @@ ul, li, dl, dt, dd {
 .page-text_intro {
   font-weight: 300;
   font-size: 1rem;
+  padding: 0 1rem;
 }
 .page-text_intro--mememver, .page-tex_intro--join {
   font-size: 0.8rem;
@@ -82,6 +84,11 @@ ul, li, dl, dt, dd {
 .subscription_join {
   border-bottom: 1.2px solid var(--white);
   padding: 0.8rem;
+}
+/* footer coding --------------------------------footer start*/
+.footer_container {
+  display: block;
+  position: relative;
 }
 .footer__subscription_submit {
   background-color: transparent;
@@ -206,7 +213,7 @@ background-color: var(--olive-green);
 .compoment-detaile-title {
   font-weight: 500;
   font-size: 1rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1rem;
 }
 .components_headings__section_hero {
   font-size: 0.8rem;
@@ -218,7 +225,8 @@ background-color: var(--olive-green);
   font-size: 4.3rem;
   color: var(--white);
   background-color: var(--black);
-  padding: 1rem;
+  padding: 3rem 1rem 8rem 5rem;
+  margin: 0rem 1rem;
   position: relative;
 }
 .components_headings__contents-title {
@@ -431,17 +439,15 @@ color: var(--dark-gray);
   display: flex;
   flex-direction: row;
   padding-right: 50px;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
-  padding-right: 15rem;
+  padding: 0.5rem 15rem 0.5rem 1rem;
 }
 .row-flex__small-padding {
   align-items: flex-start;
   justify-content:space-between;
   gap: 1rem;
-  padding-bottom: 1.5rem;
-  padding-right: 0;
-
+  padding: 0.5rem 1rem;
 }
 .colume-flex {
   width: 80%;
