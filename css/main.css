@@ -129,7 +129,7 @@ ul, li, dl, dt, dd {
 .fa-solid {
   padding-right: 0.8rem;
 }
-.container__icon-explore {
+.container__cursor-explore {
   display: flex;
   flex-direction: row;
   gap: 1rem;
@@ -162,6 +162,24 @@ background-color: var(--gray);
 }
 .components_circle-explore__olive-green {
 background-color: var(--olive-green);
+}
+
+/****
+cursor coding
+***/
+div.circle-cursors div.circle-explore{
+  position: absolute;
+  top: 30pt;
+  left: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: 10000;
+  pointer-event: none;
+  transform: translate()
+}
+.circle-explore__brown {
+  background-color: var(--brown);
 }
 /*  header /  Navigation    -----------^.-.^------------ */
 .header {
