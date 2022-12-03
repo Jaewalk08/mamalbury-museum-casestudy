@@ -1,14 +1,46 @@
-const cursorTag = document.querySelector('.circle-explore');
-const circle = cursorTag.querySelector('.icon-explore')
+const cursorTag = document.querySelector('div.cursors')
+const circles = cursorTag.querySelector('circle')
+const circleMessage = cursorTag.querySelector("circle explore")
+const images = document.querySelectorAll("img")
 
-const positionElement = (e)=> {
-  const mouseY = e.clientY;
-  const mouseX = e.clientX;
-   
-  cursorSmall.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
-  
-  cursorBig.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
- 
-}
+let aimX = 0
+let aimY = 0
 
-window.addEventListener('mousemove', positionElement)
+circles.forEach((ball, index) =>{
+  let currentX = 0
+  let currentY = 0
+
+  let speed = 0.3 - index * 0.015
+
+  const animate = function () {
+    currentX += (aimX - currentX) * speed
+    currentY += (aimX - currentX) * speed
+
+    ball.syle.left = currentX + "px"
+    ball.style.top = currentY + "px"
+
+    requestAnimationFrame(animate)
+  }
+
+  animate()
+})
+
+document.addEventListener("mousemove", function (event) {
+  aimX = event.pageX
+  aimY = event.pageY
+})
+
+images.forEach(image => {
+  image.addEventListener("mouseover", function () {
+    circleMessage.classList.add("visible")
+    circleMessage.innerHTML = image.getAttribute("data-hover")
+  })
+  image.addEventListener("mouseout", function () {
+    circleMessage.classList.remove("visible")
+  })
+})
+
+
+
+
+
