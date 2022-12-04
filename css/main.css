@@ -193,7 +193,7 @@ cursor coding
   filter: blur(1.5rem);
   -webkit-transition: 50ms ease 50ms;
   -moz-transition: 50ms ease 50ms;
-  transition: 300ms ease 80000ms;    /*-----time or positon?-------*/
+  transition: 300ms ease 80000ms;    /*-----need to figure out solution: any options??-------*/
 }
 .article-texts {
   font-size: 0.84rem;
@@ -247,7 +247,6 @@ div.cursors div.circle span.explore {
 .container_hero {
   width: 115%;
   position: relative;
-  border: 1px solid red;
 }
 img.article-imgs__hero {
   display: block;
@@ -281,6 +280,7 @@ span.typo {
 .container_hero:hover .container_typo-hero {
   height: 100%;
 }
+
 /*  header /  Navigation    -----------^.-.^------------ */
 .wrapper_nav-top {
   display: flex;
@@ -425,10 +425,27 @@ slideout Navigation table
   font-weight: bolder;
   transition: transform 200ms ease-in;
 }
-.slideout_link--plan {
+.slideout_img_container {
   position: relative;
 }
 
+.slideout_link::after {
+  content: " ";
+  position: absolute;
+  right: 15%;
+  top: -35%;
+  width: 80px;
+  height: 120px;
+  transform: scale(1);
+  transform-origin: center;
+  transition: transform 90ms ease-in;
+}
+.slideout_link:hover::after {
+  transform: scale(1);
+}
+.slideout-hover-img__visit-plan {
+  background-image: url("slideout__visit__plan-trip.jpg")
+}
 /* footer Coding starts here*/
 .footer_contents--wrapper {
   padding: 1rem;
@@ -474,7 +491,7 @@ Components setting -----------------components------settings------components----
   line-height: 0.4;
 }
 .component-nav-contents>* {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   line-height: 1.7;
   text-decoration: none;
   list-style: none;
@@ -485,7 +502,7 @@ Components setting -----------------components------settings------components----
 .component-nav__heading  {
 color: var(--black);
 font-weight: bold;
-font-size: 0.9rem;
+font-size: 1rem;
 line-height: 1.7;
 padding-top: 0.7rem;
 }
@@ -564,14 +581,14 @@ color: var(--dark-gray);
   align-items: flex-start;
   justify-content:space-between;
   gap: 1rem;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0;
 }
 .colume-flex {
   width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-bottom: 5px;
+  padding-bottom: 0.8rem;
 }
 .icon-container {
 display: flex;
