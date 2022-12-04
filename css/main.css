@@ -190,7 +190,7 @@ cursor coding
   transform: scale(1.1);
 }
 .article-imgs:not(:hover) {
-  filter: blur(35px);
+  filter: blur(1.5rem);
   -webkit-transition: 50ms ease 50ms;
   -moz-transition: 50ms ease 50ms;
   transition: 300ms ease 50000ms;    /*-----time or positon?-------*/
@@ -239,30 +239,28 @@ div.cursors div.circle span.explore {
 .circle-explore__brown {
   background-color: var(--brown);
 }
-.container_img-hero {
+.components-hero {
   width: 100%;
-  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.container_img-hero {
+  width: 115%;
   position: relative;
-  margin: 0;
-  padding: 0;
-}
-.components-hero, .container_img-hero {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-.container_img-hero {
   border: 1px solid red;
 }
+.article-imgs__hero {
+  width: 90%;
+}
 .hero-main-img-container {
-  margin: 0 1rem 0 8rem;
+  margin: 0 0 0 10rem;
 }
 .typo-bound {
-  width: 100%;
+  width: 110%;
   height: auto;
   position: absolute;
   top: 30px;
-  left: 50px;
+  left: -65px;
 }
 
 /*  header /  Navigation    -----------^.-.^------------ */
