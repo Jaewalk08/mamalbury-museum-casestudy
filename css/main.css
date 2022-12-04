@@ -167,19 +167,12 @@ background-color: var(--olive-green);
 /****
 cursor coding
 ***/
-/* cursor {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}*/
+
 .article-container {
   display: flex;
   flex-direction: column;
   width: 320px;   /* <<<<<<< ----   this needs to change or remove */
   padding-top: 2.2rem;
-}
-.colume-flex>* {
-  border: 1px solid red;
 }
 .img-container_zoom {
   width: 320px;
@@ -200,7 +193,7 @@ cursor coding
   filter: blur(35px);
   -webkit-transition: 50ms ease 50ms;
   -moz-transition: 50ms ease 50ms;
-  transition: 300ms ease 1500ms;
+  transition: 300ms ease 50000ms;    /*-----time or positon?-------*/
 }
 .article-texts {
   font-size: 0.84rem;
@@ -246,12 +239,33 @@ div.cursors div.circle span.explore {
 .circle-explore__brown {
   background-color: var(--brown);
 }
+.container_img-hero {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.components-hero, .container_img-hero {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.container_img-hero {
+  border: 1px solid red;
+}
+.hero-main-img-container {
+  margin: 0 1rem 0 8rem;
+}
+.typo-bound {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 30px;
+  left: 50px;
+}
 
 /*  header /  Navigation    -----------^.-.^------------ */
-.header {
-  position: sticky;
-  top: 10px;
-}
 .wrapper_nav-top {
   display: flex;
   flex-direction: row;
@@ -505,7 +519,7 @@ color: var(--dark-gray);
   margin-top: 0;
   margin-bottom: 1rem;
 }
-/*.components>*, .row-flex>*, .col-flex>* {
+.components>*, .row-flex>*, .col-flex>* {
   border: 1px solid red;
 }*/
 .exsample-heading {
@@ -658,4 +672,7 @@ _____screen shot images adjustments only_____
 }
 .screen_shot_imgs--button {
   width: 88%;
+}
+.screen_shot_imgs--hero {
+  width: 120%;
 }
