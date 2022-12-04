@@ -181,19 +181,19 @@ cursor coding
   margin: 0;
   padding: 0;
 }
-.article-imgs {
+.article-imgs_zoom {
   max-width: 100%;
   max-height: 100%;
-  transition: 0.75s;
+  transition: 0.2s;
 }
 .img-container_zoom:hover .article-imgs {
   transform: scale(1.1);
 }
-.article-imgs:not(:hover) {
+.img-hover:not(:hover) {
   filter: blur(1.5rem);
   -webkit-transition: 50ms ease 50ms;
   -moz-transition: 50ms ease 50ms;
-  transition: 300ms ease 50000ms;    /*-----time or positon?-------*/
+  transition: 300ms ease 80000ms;    /*-----time or positon?-------*/
 }
 .article-texts {
   font-size: 0.84rem;
@@ -244,25 +244,43 @@ div.cursors div.circle span.explore {
   padding: 0;
   margin: 0;
 }
-.container_img-hero {
+.container_hero {
   width: 115%;
   position: relative;
   border: 1px solid red;
 }
-.article-imgs__hero {
+img.article-imgs__hero {
+  display: block;
   width: 90%;
-}
-.hero-main-img-container {
-  margin: 0 0 0 10rem;
+  padding: 0 0 0 10rem;
 }
 .typo-bound {
-  width: 110%;
+  display: block;
+  width: 200%;
   height: auto;
-  position: absolute;
-  top: 30px;
-  left: -65px;
 }
-
+.typo {
+  position: absolute;
+  top: 90%;
+  left: 45%;
+  -ms-transform: translate(-97%, -65%);
+  transform: translate(-97%, -65%);
+}
+span.typo {
+  display: block;
+}
+.container_typo-hero {
+  position: absolute;
+  bottom: 45%;
+  left: 0;
+  width: 100%;
+  height: 0;
+  opacity: 1;
+  transition: 0.9s ease;
+}
+.container_hero:hover .container_typo-hero {
+  height: 100%;
+}
 /*  header /  Navigation    -----------^.-.^------------ */
 .wrapper_nav-top {
   display: flex;
@@ -432,7 +450,7 @@ slideout Navigation table
 Components setting -----------------components------settings------components------
 */
 .web-study_nav {
-  height: auto;
+  height: 200%;
   width: 16%;
   position: fixed;
   z-index: 1;
@@ -444,7 +462,7 @@ Components setting -----------------components------settings------components----
 .components_heading {
   font-family: var(--font-san-serif);
   font-weight: bold;
-  font-size: 0.9rem;
+  font-size: 1rem;
   text-align: center;
   color: var(--black);
   line-height: 0.5;
@@ -456,19 +474,19 @@ Components setting -----------------components------settings------components----
   line-height: 0.4;
 }
 .component-nav-contents>* {
-  font-size: 0.9rem;
-  line-height: 1.8;
+  font-size: 0.8rem;
+  line-height: 1.7;
   text-decoration: none;
   list-style: none;
   margin-left: 0;
-  padding-left: 0.8rem;
+  padding-left: 0.9rem;
   text-transform: uppercase;
 }
 .component-nav__heading  {
 color: var(--black);
 font-weight: bold;
-font-size: 1rem;
-line-height: 1.8;
+font-size: 0.9rem;
+line-height: 1.7;
 padding-top: 0.7rem;
 }
 .component-nav__sub-heading {
@@ -476,7 +494,7 @@ font-weight: bolder;
 color: var(--dark-gray);
 }
 .component-nav-list {
-font-weight: 300;
+font-weight: 400;
 color: var(--dark-gray);
 }
 /* mian starts here --------*_*------------------*/
