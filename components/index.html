@@ -13,6 +13,8 @@
     </head>
 
     <body>
+     <script src="../java/main.js"></script>
+
           <!--fixed logo white and black-->
           <a href="index.html"><img class="fixed-logo fixed-logo__white" src="img/mama_logo-white.png" alt="mama logo"></a>
 
@@ -265,8 +267,6 @@
                                              <div class="circle circle-explore__brown"><span class="explore"></span></div>
                                         </div>
 
-                                        <script src="../java/main.js"></script>
-
                                         <div class="article-texts">
                                              <p class="article_title">Plan Your Trip</p>
                                              <p class="article_text">Open 7 days a week, 363 days of the year and FREE. Come enjoy a day out at the Museum with your friends and family.</p>
@@ -297,166 +297,186 @@
                               </div><!--img hero col flex-->
                          </div><!--col flex for coding-->
                </div><!--components wrapper for link. button. icon-->
+           </article>
 
-     <article class="container">
-          <h3 class="contents-heading contents-heading__top" id="page-header">Page Header</h3>
-          <hr class="dividing_lines">
+           <article class="container">
+               <h3 class="contents-heading contents-heading__top" id="page-header">Page Header</h3>
+               <hr class="dividing_lines">
 
-               <h4 class="exsample-heading" id="">NAVIGATION</h4>
-               <div class="components">
-                    <div class="colume-flex">
-                         <h5 class="compoment-detaile-headings">| Header navigation</h5>
-                              <div>
-                                   <img class="screen_shot_imgs nav-top-list"
-                                        src="img/nav_list-top.png"
-                                        alt="navigation menu">
-                              </div>
+                    <h4 class="exsample-heading" id="">NAVIGATION</h4>
+                    <div class="components">
+                         <div class="colume-flex">
+                              <h5 class="compoment-detaile-headings">| Header navigation</h5>
+                                   <div>
+                                        <img class="screen_shot_imgs nav-top-list"
+                                             src="img/nav_list-top.png"
+                                             alt="navigation menu">
+                                   </div>
 
-                         <h5 class="compoment-detaile-headings">| Coding: Header navigation </h5>
-                              <div class="wrapper_nav-top">
-                                   <ul class="container-nav-top container-nav-top__list">
-                                        <li class="nav-list"><a class="nav-list-link" href="#!">What&#39;s On</a></li>
-                                        <li class="nav-list"><a class="nav-list-link" href="#!">Visit</a></li>
-                                        <li class="nav-list"><a class="nav-list-link" href="#!">Explore</a></li>
-                                        <li class="nav-list"><a class="nav-list-link" href="#!">Classes</a></li>
-                                        <li class="nav-list"><a class="nav-list-link" href="#!">Support</a></li>
-                                        <li class="nav-list"><a class="nav-list-link" href="#!">About</a></li>
-                                   </ul>
-                                   <div class="container-nav-top container-nav-top__search">
-                                        <p class="nav-list"><a class="nav-list-link" href="#!" title="search"><i class="fa-solid fa-magnifying-glass"></i>  Search MAMA</a></p>
-                                   </div><!--search menu wrapper-->
-                              </div><!--coding nav wrapper-->
-                    </div><!--nav col wrapper-->
+                              <h5 class="compoment-detaile-headings">| Coding: Header navigation </h5>
+                                   <div class="wrapper_nav-top">
+                                        <ul class="container-nav-top container-nav-top__list">
+                                             <li class="nav-list"><a class="nav-list-link" href="#!">What&#39;s On</a></li>
+                                             <li class="nav-list"><a class="nav-list-link" href="#!">Visit</a></li>
+                                             <li class="nav-list"><a class="nav-list-link" href="#!">Explore</a></li>
+                                             <li class="nav-list"><a class="nav-list-link" href="#!">Classes</a></li>
+                                             <li class="nav-list"><a class="nav-list-link" href="#!">Support</a></li>
+                                             <li class="nav-list"><a class="nav-list-link" href="#!">About</a></li>
+                                        </ul>
+                                        <div class="container-nav-top container-nav-top__search">
+                                             <p class="nav-list"><a class="nav-list-link" href="#!" title="search"><i class="fa-solid fa-magnifying-glass"></i>  Search MAMA</a></p>
+                                        </div><!--search menu wrapper-->
+                                   </div><!--coding nav wrapper-->
+                         </div><!--nav col wrapper-->
 
-                    <div class="row-flex row-flex__small-padding">
-                         <div class="colume-flex colume-flex__visit">
-                              <h5 class="compoment-detaile-headings">| Navigation side slideout images</h5>
-                                   <img class="screen_shot_imgs nav-top-slideout nav-top-slideout__visit"
-                                        src="img/nav-slideout__visit.png"
-                                        alt="navigation slideout menu lists">
-                                   <img class="screen_shot_imgs slideout__opening-img"
-                                        scrset="img/nav-slideout-opening.png 2x"
-                                        src="img/nav-slideout-opening.png"
-                                        alt="navigation slideout menu lists">
-                         </div><!--nav left-slideout naslideoutv-->
+                         <div class="row-flex row-flex__small-padding">
+                              <div class="colume-flex colume-flex__header-slideout">
+                                   <h5 class="compoment-detaile-headings">| Navigation side slideout images</h5>
+                                        <img class="screen_shot_imgs nav-top-slideout nav-top-slideout__visit"
+                                             src="img/nav-slideout__visit.png"
+                                             alt="navigation slideout menu lists">
+                                        <img class="screen_shot_imgs slideout__opening-img"
+                                             scrset="img/nav-slideout-opening.png 2x"
+                                             src="img/nav-slideout-opening.png"
+                                             alt="navigation slideout menu lists">
+                              </div><!--nav left-slideout naslideoutv-->
+
+                              <div class="colume-flex nav-slideout-wrapper"><!-- *important to remember* this is position: relative for opening hour-->
+                                   <h5 class="compoment-detaile-headings">| Coding: Navigation side slideout </h5> 
+                                   <div class="nav-slideout-contents-wrapper">                               
+                                        <div id="nav-visit" class="nav_left_container"><!--nav slideout visit contents-->                                        
+                                             <ul class="nav_left__contents-list">
+                                                  <li>
+                                                  <div class="slideout_img_container">
+                                                       <a class="slideout_link slideout_link--plan" href="https://www.mamalbury.com.au/plan-your-trip">
+                                                       Plan Your Trip
+                                                       <span class="slideout-hover-imgs slideout-hover-img__visit-plan">
+                                                       </span></a>
+                                                  <!-- <img class="slideout-hover-imgs slideout-hover-img__visit-plan"
+                                                            src="img/slideout__visit__plan-trip.jpg" 
+                                                            alt="museum indoor space and art">-->     
+                                                  </div><!--slideout_pop-img container-->
+                                                  </li>
+                                             
+                                                  
+                                                  <li><a class="slideout_link slideout_link--families-visit" href="https://www.mamalbury.com.au/kids-and-families">Kids &#38; Families</a>
+                                                  <!--<span class="slideout-hover">
+                                                            <img class="slideout-hover-imgs slideout-hover-img__visit-kids" src="img/slideout__visit__kids-family.jpg"
+                                                                 alt="kids are looking at art and interect with it"></span>-->
+                                                  </li>
+                                                  <li><a class="slideout_link slideout_link--shop" href="https://www.mamalbury.com.au/shop">Shop</a>
+                                                       <!--<span class="slideout-hover">
+                                                       <img class="slideout-hover-imgs slideout-hover-img__visit" src="img/slideout__visit__shop.jpg"
+                                                                 alt="items on display"></span>-->
+                                                  </li>
+                                                  <li><a class="slideout_link slideout_link--eat" href="https://www.mamalbury.com.au/eat">Eat</a>
+                                                       <!--<span class="slideout-hover">
+                                                       <img class="slideout-hover-imgs slideout-hover-img__visit" src="img/slideout__visit__eat.jpg"
+                                                                 alt="couple seat and enjoy their drink"></span>-->
+                                                  </li>
+                                                  <li><a class="slideout_link slideout_link--school-visit" href="https://www.mamalbury.com.au/school-visits">School Visits</a>
+                                                       <!--<span class="slideout-hover">
+                                                       <img class="slideout-hover-s slideout-hover-img__visit" src="img/slideout__visit__school.jpg"
+                                                                 alt="a girl pointing art"></span>-->
+                                                  </li>
+                                                  <li><a class="slideout_link slideout_link--venue-hire" href="https://www.mamalbury.com.au/venue-hire">Venue Hire</a>
+                                                       <!--<span class="slideout-hover">
+                                                       <img class="slideout-hover-imgs slideout-hover-img__visit" src="img/slideout__visit__venue-hire.jpg"
+                                                                 alt="people held their drink in museum indoor space"></span>-->
+                                                  </li>
+                                             </ul>                                        
+                                        </div><!--Navigation left slideoutdiv-->
+
+                                        <div class="slideout_nav-top__opening">
+                                             <table>
+                                                  <caption class="slideout_opening-title">We are an Art Museum</caption>
+                                                  <tr>
+                                                       <th class="slideout_opening-dates">Monday-Friday</th>
+                                                       <td class="slideout_opening-time">10am-5pm</td>
+                                                  </tr>
+                                                  <tr>
+                                                       <th class="slideout_opening-dates">Saturday</th>
+                                                       <td class="slideout_opening-time">10am-4pm</td>
+                                                  </tr>
+                                                  <tr>
+                                                       <th class="slideout_opening-dates">Sunday</th>
+                                                       <td class="slideout_opening-time">10am-4pm</td>
+                                                  </tr>
+                                                  <tr>
+                                                       <th class="slideout_opening-dates">Public Holidays</th>
+                                                       <td class="slideout_opening-time">10am-4pm</td>
+                                                  </tr>
+                                                  <tr>
+                                                       <th class="slideout_opening-dates">Anzac Day</th>
+                                                       <td class="slideout_opening-time"></td>
+                                                  </tr>
+                                                  <tr>
+                                                       <th class="slideout_opening-dates">Christmas Closed</th>
+                                                       <td class="slideout_opening-time">10am-5pm</td>
+                                                  </tr>
+                                                  <tr>
+                                                       <th class="slideout_opening-dates">Good Friday Closed</th>
+                                                       <td class="slideout_opening-time"></td>
+                                                  </tr>
+                                                  <tr>
+                                                       <th class="slideout_opening-free_entry">Free Entry</th>
+                                                       <td></td>
+                                                  </tr>
+                                             </table>
+                                        </div><!--Coding: opening hours table-->
+                                   </div><!--wrapper-->
+                              </div><!--col-flex - coding: nav slideout vitie contents -->
+                         </div><!--row-flex - coding: nave slideout vitie contents-->
+                    </div><!--components: nav warpper-->
+
+
+
+
+                    <div class="components">
+                         <div class="colume-flex colume-flex__header">
+                         <h5 class="compoment-detaile-headings">| Header: Navigation | Side slideout | Search</h5>
+                              <img class="screen_shot_imgs nav-top-header"
+                                   src="img/dropdown-nav-list-img.png"
+                                   alt="navigation slideout menu lists">
 
                          <div class="colume-flex nav-slideout-wrapper"><!-- *important to remember* this is position: relative for opening hour-->
-                              <h5 class="compoment-detaile-headings">| Coding: Navigation side slideout </h5>                                   
-                                   <div id="nav-visit" class="nav_left_container"><!--nav slideout visit contents-->                                        
-                                        <ul class="nav_left__contents-list">
-                                             <li>
-                                             <div class="slideout_img_container">
-                                                  <a class="slideout_link slideout_link--plan" href="https://www.mamalbury.com.au/plan-your-trip">
-                                                  Plan Your Trip
-                                                  <span class="slideout-hover-imgs slideout-hover-img__visit-plan">
-                                                  </span></a>
-                                             <!-- <img class="slideout-hover-imgs slideout-hover-img__visit-plan"
-                                                       src="img/slideout__visit__plan-trip.jpg" 
-                                                       alt="museum indoor space and art">-->     
-                                             </div><!--slideout_pop-img container-->
-                                             </li>
+                              <h5 class="compoment-detaile-headings">| Coding: Navigation | Side slideout | Search</h5> 
+                              <div class="">
+                                   <div class="wrapper_nav-top">
                                         
-                                             
-                                             <li><a class="slideout_link slideout_link--families-visit" href="https://www.mamalbury.com.au/kids-and-families">Kids &#38; Families</a>
-                                             <!--<span class="slideout-hover">
-                                                       <img class="slideout-hover-imgs slideout-hover-img__visit-kids" src="img/slideout__visit__kids-family.jpg"
-                                                            alt="kids are looking at art and interect with it"></span>-->
+                                             <div class="component_logo_continer">
+                                                  <a href="index.html">                                                  
+                                                  <img class="fixed-logo__components" src="img/mama_logo-white.png" alt="mama logo">
+                                                  </a>
+                                             </div><!--logo container-->
+
+                                        <ul class="container-nav-top container-nav-top__list">
+                                             <li class="nav-list">
+                                                  <div id="mamaSidenav" class="sidenav">
+                                                  <a class="nav-list-link" href="#!"><span class="nav-list-top nav-list__whaton" onclick="openNav()">What&#39;s On</span></a>
+                                                  </div>
                                              </li>
-                                             <li><a class="slideout_link slideout_link--shop" href="https://www.mamalbury.com.au/shop">Shop</a>
-                                                  <!--<span class="slideout-hover">
-                                                  <img class="slideout-hover-imgs slideout-hover-img__visit" src="img/slideout__visit__shop.jpg"
-                                                            alt="items on display"></span>-->
+
+                                             <li class="nav-list">
+                                                  <a class="nav-list-link" href="#!">Visit</a>
                                              </li>
-                                             <li><a class="slideout_link slideout_link--eat" href="https://www.mamalbury.com.au/eat">Eat</a>
-                                                  <!--<span class="slideout-hover">
-                                                  <img class="slideout-hover-imgs slideout-hover-img__visit" src="img/slideout__visit__eat.jpg"
-                                                            alt="couple seat and enjoy their drink"></span>-->
-                                             </li>
-                                             <li><a class="slideout_link slideout_link--school-visit" href="https://www.mamalbury.com.au/school-visits">School Visits</a>
-                                                  <!--<span class="slideout-hover">
-                                                  <img class="slideout-hover-s slideout-hover-img__visit" src="img/slideout__visit__school.jpg"
-                                                            alt="a girl pointing art"></span>-->
-                                             </li>
-                                             <li><a class="slideout_link slideout_link--venue-hire" href="https://www.mamalbury.com.au/venue-hire">Venue Hire</a>
-                                                  <!--<span class="slideout-hover">
-                                                  <img class="slideout-hover-imgs slideout-hover-img__visit" src="img/slideout__visit__venue-hire.jpg"
-                                                            alt="people held their drink in museum indoor space"></span>-->
-                                             </li>
+                                             <li class="nav-list"><a class="nav-list-link" href="#!">Explore</a></li>
+                                             <li class="nav-list"><a class="nav-list-link" href="#!">Classes</a></li>
+                                             <li class="nav-list"><a class="nav-list-link" href="#!">Support</a></li>
+                                             <li class="nav-list"><a class="nav-list-link" href="#!">About</a></li>
                                         </ul>
-                                        
-                                   </div><!--Navigation left slideoutdiv-->
-                                   <div  class="slideout_nav-top__opening">
-                                        <table>
-                                             <caption class="slideout_opening-title">We are an Art Museum</caption>
-                                             <tr>
-                                                  <th class="slideout_opening-dates">Monday-Friday</th>
-                                                  <td class="slideout_opening-time">10am-5pm</td>
-                                             </tr>
-                                             <tr>
-                                                  <th class="slideout_opening-dates">Saturday</th>
-                                                  <td class="slideout_opening-time">10am-4pm</td>
-                                             </tr>
-                                             <tr>
-                                                  <th class="slideout_opening-dates">Sunday</th>
-                                                  <td class="slideout_opening-time">10am-4pm</td>
-                                             </tr>
-                                             <tr>
-                                                  <th class="slideout_opening-dates">Public Holidays</th>
-                                                  <td class="slideout_opening-time">10am-4pm</td>
-                                             </tr>
-                                             <tr>
-                                                  <th class="slideout_opening-dates">Anzac Day</th>
-                                                  <td class="slideout_opening-time"></td>
-                                             </tr>
-                                             <tr>
-                                                  <th class="slideout_opening-dates">Christmas Closed</th>
-                                                  <td class="slideout_opening-time">10am-5pm</td>
-                                             </tr>
-                                             <tr>
-                                                  <th class="slideout_opening-dates">Good Friday Closed</th>
-                                                  <td class="slideout_opening-time"></td>
-                                             </tr>
-                                             <tr>
-                                                  <th class="slideout_opening-free_entry">Free Entry</th>
-                                                  <td></td>
-                                             </tr>
-                                        </table>
-                                   </div><!--Coding: opening hours table-->
-                         </div><!--col-flex - coding: nav slideout vitie contents -->
-                    </div><!--row-flex - coding: nave slideout vitie contents-->
-               </div><!--components: nav warpper-->
+                                        <div class="container-nav-top container-nav-top__search">
+                                             <p class="nav-list"><a class="nav-list-link" href="#!" title="search"><i class="fa-solid fa-magnifying-glass"></i>  Search MAMA</a></p>
+                                        </div><!--search menu wrapper-->
 
-               <div class="components">
-               <div class="row-flex row-flex__small-padding">
-                    <h5 class="compoment-detaile-headings">| Header: Navigation | Side slideout | Search</h5>
-                         <img class="screen_shot_imgs nav-top-slideout nav-top-slideout__visit"
-                              src="img/dropdown-nav-list-img.png"
-                              alt="navigation slideout menu lists">
+                                        <div class="close">
+                                             <a class="link-button link-button__close"  href="#!"><i class="fa-solid fa-xmark"></i> Close</a>
+                                        <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">**-->
+                                   </div><!--wrapper_nav-top-->
+                              </div><!--?-->
+                         </div><!--header nav col flex-->
 
-                    <div class="colume-flex nav-slideout-wrapper"><!-- *important to remember* this is position: relative for opening hour-->
-                         <h5 class="compoment-detaile-headings">| Coding: Navigation | Side slideout | Search</h5> 
-                          <div class="">
-                              <div class="wrapper_nav-top">
-                                   <ul class="container-nav-top container-nav-top__list">
-                                        <li class="nav-list">
-                                             <div>
-                                                  <span><a class="nav-list-link" href="#!">What&#39;s On</a></span>
-                                             </div>
-                                        </li>
-
-                                        <li class="nav-list">
-                                             <a class="nav-list-link" href="#!">Visit</a>
-                                        </li>
-                                        <li class="nav-list"><a class="nav-list-link" href="#!">Explore</a></li>
-                                        <li class="nav-list"><a class="nav-list-link" href="#!">Classes</a></li>
-                                        <li class="nav-list"><a class="nav-list-link" href="#!">Support</a></li>
-                                        <li class="nav-list"><a class="nav-list-link" href="#!">About</a></li>
-                                   </ul>
-                                   <div class="container-nav-top container-nav-top__search">
-                                        <p class="nav-list"><a class="nav-list-link" href="#!" title="search"><i class="fa-solid fa-magnifying-glass"></i>  Search MAMA</a></p>
-                                   </div><!--search menu wrapper-->
-
-                                   <div>
+                                   <div class="nav-slideout nav-slideout__visit-us">
                                         <div id="visit" class="nav_left_container"><!--nav slideout visit contents-->                                        
                                              <ul class="nav_left__contents-list">
                                                   <li>
@@ -537,50 +557,55 @@
                                                   </tr>
                                              </table>
                                         </div><!--Coding: opening hours table-->
-                                   </div>
+                                   </div><!--nav-slideout visit-us-->
                               </div><!--coding nav wrapper-->
-                          </div><!--wrapper ?? not coding-->
-                    </div><!--components: nav warpper-->
-
-
-
-                    <div class="row-flex row-flex__small-padding">
-                         <img class="screen_shot_imgs slideout__opening-img"
-                         scrset="img/nav-slideout-opening.png 2x"
-                         src="img/dropdown-nav__search.png"
-                         alt="navigation slideout menu lists">
-
-               <div class="components">
-                    <div class="row-flex row-flex__small-padding">
-                         <h5 class="compoment-detaile-headings">| Hero | pages</h5>
-                              <img class="screen_shot_imgs nav-top-slideout nav-top-slideout__visit"
-                                   src="img/dropdown-nav-list-img.png"
-                                   alt="navigation slideout menu lists">
-                                   
-               </div><!--components: nav warpper-->
-
-          </article>
-               <div class="components">
-                    <div class="row-flex row-flex__small-padding">
-                         <div class="colume-flex">
-                              <h5 class="compoment-detaile-headings">| Footer navigation</h5>                         
-                                   <img class="screen_shot_imgs nav-footer-list"
-                                        src="img/footer_lists__about.png"
-                                        alt="navigation menu">
-                         </div><!--col flex for footer nav img-->          
                               
-                         <div class="colume-flex">
-                              <h5 class="compoment-detaile-headings">| Coding: Footer navigation </h5>
-                                   <dl class="footer_contents--wrapper">
-                                        <dt class="footer_contents footer_contents--heading">About</dt>
-                                        <dd class="footer_contents footer_contents--list">Home</dd>
-                                        <dd class="footer_contents footer_contents--list">Media</dd>
-                                        <dd class="footer_contents footer_contents--list">Careers</dd>
-                                        <dd class="footer_contents footer_contents--list">Accessibility</dd>
-                                   </dl>
-                         </div><!--col flex: coding footer nav-->
-                    </div><!--row fle: for footer nav-->
-               </div><!--compoents for footer nav-->
+                         </div><!--components: nav warpper-->
+
+
+
+                         <div class="row-flex row-flex__small-padding">
+                              <img class="screen_shot_imgs slideout__opening-img"
+                              scrset="img/nav-slideout-opening.png 2x"
+                              src="img/dropdown-nav__search.png"
+                              alt="navigation slideout menu lists">
+
+                    <div class="components">
+                         <div class="row-flex row-flex__small-padding">
+                              <h5 class="compoment-detaile-headings">| Hero | pages</h5>
+                                   <img class="screen_shot_imgs nav-top-slideout nav-top-slideout__visit"
+                                        src="img/dropdown-nav-list-img.png"
+                                        alt="navigation slideout menu lists">
+
+                    </div><!--components: nav warpper-->
+            </article>
+
+            <article class="container">
+               <h3 class="contents-heading contents-heading__top" id="footer">Footer</h3>
+               <hr class="dividing_lines">
+
+                    <h4 class="exsample-heading" id="">Footer NAVIGATION</h4>
+                    <div class="components">
+                         <div class="row-flex row-flex__small-padding">
+                              <div class="colume-flex">
+                                   <h5 class="compoment-detaile-headings">| Footer navigation</h5>                         
+                                        <img class="screen_shot_imgs nav-footer-list"
+                                             src="img/footer_lists__about.png"
+                                             alt="navigation menu">
+                              </div><!--col flex for footer nav img-->          
+                                   
+                              <div class="colume-flex">
+                                   <h5 class="compoment-detaile-headings">| Coding: Footer navigation </h5>
+                                        <dl class="footer_contents--wrapper">
+                                             <dt class="footer_contents footer_contents--heading">About</dt>
+                                             <dd class="footer_contents footer_contents--list">Home</dd>
+                                             <dd class="footer_contents footer_contents--list">Media</dd>
+                                             <dd class="footer_contents footer_contents--list">Careers</dd>
+                                             <dd class="footer_contents footer_contents--list">Accessibility</dd>
+                                        </dl>
+                              </div><!--col flex: coding footer nav-->
+                         </div><!--row fle: for footer nav-->
+                    </div><!--compoents for footer nav-->
             </article>
           </section><!--full body wrapper-->
        </main>

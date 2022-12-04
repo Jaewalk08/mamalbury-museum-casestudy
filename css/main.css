@@ -381,16 +381,17 @@ span.typo {
 /*
 slideout Navigation table
 */
-.nav-slideout-wrapper {
+.nav-slideout-contents-wrapper {
   position: relative;
 }
 .slideout_nav-top__opening {
   position: absolute;
-  top: 24.8rem;
+  top: 21rem; /*24.8rem;*/
   left: 0;
   font-size: 0.8rem;
   font-weight: 400;
   text-align: left;
+  line-height: 1.15;
 }
 .slideout_opening-title {
   text-align: left;
@@ -404,14 +405,21 @@ slideout Navigation table
   margin-left: 0;
 }
 .slideout_opening-free_entry {
-  padding: 2rem 0 2rem;
+  padding: 1.8rem 0 2rem;
   font-weight: 400;
 }
 .slideout_opening-title {
   text-align: left;
 }
 /* slideout contents and hover/hover img setup <<<?   -----------^.-.^------------ */
-
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.container-nav-top__list {
+  width: 100%;
+  margin: 20%;
+}
 .slideout_link {
   list-style: none;
   text-decoration: none;
@@ -419,7 +427,8 @@ slideout Navigation table
   font-size: 1rem;
   line-height: 1.5;
 }
-/* need to fix this effects */
+
+/* need to fix this effects /* slide out image pop up with hover
 .slideout_link:hover {
   color: var(-black);
   font-weight: bolder;
@@ -428,7 +437,6 @@ slideout Navigation table
 .slideout_img_container {
   position: relative;
 }
-
 .slideout_link::after {
   content: " ";
   position: absolute;
@@ -446,6 +454,7 @@ slideout Navigation table
 .slideout-hover-img__visit-plan {
   background-image: url("slideout__visit__plan-trip.jpg")
 }
+*/
 /* footer Coding starts here*/
 .footer_contents--wrapper {
   padding: 1rem;
@@ -515,6 +524,16 @@ font-weight: 400;
 color: var(--dark-gray);
 }
 /* mian starts here --------*_*------------------*/
+.component_logo_continer {
+ position: relative;
+}
+.fixed-logo__components {
+  width: 2.65rem;
+  position: absolute;
+  top: 0rem;
+  margin-left: -0.5;
+  padding: 3rem 0;
+}
 .fontface {
   font-size: 2rem;
   }
@@ -554,7 +573,7 @@ color: var(--dark-gray);
 }
 .components>*, .row-flex>*, .col-flex>* {
   border: 1px solid red;
-}*/
+}
 .exsample-heading {
   letter-spacing: 0.5rem;
   font-size: 1.1rem;
@@ -708,4 +727,7 @@ _____screen shot images adjustments only_____
 }
 .screen_shot_imgs--hero {
   width: 120%;
+}
+.nav-top-header {
+  width: 108%;
 }
