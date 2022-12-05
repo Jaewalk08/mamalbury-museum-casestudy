@@ -481,9 +481,25 @@ slideout Navigation table
   font-weight: bolder;
   transition: transform 200ms ease-in;
 }
+.search_submit {
+  border-top: 1.2px solid var(--white);
+  padding-top: 0.9rem;
+  margin-top: 1rem;
+}
 .search_window {
-  font-size: 10rem;
-
+  font-size: 2.5rem;
+  font-weight: bold;
+  opacity: 0.6;
+  background-color: var(--black);
+  color: var(--white);
+  border: none;
+  border-style: hidden;
+}
+.search_window:focus {
+  outline: none;
+}
+.nav-list-top {
+  color: var(--white);
 }
 /* need to fix this effects /* slide out image pop up with hover
 
@@ -549,7 +565,7 @@ Components setting -----------------components------settings------components----
 .components_heading {
   font-family: var(--font-san-serif);
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-align: center;
   color: var(--black);
   line-height: 0.5;
@@ -590,9 +606,10 @@ color: var(--dark-gray);
   background-color: var(--white);
 }
 .component_full-width__black {
-  width: 110%;
-  height: 800px;
+  width: 100%;
+  height: 735px;
   background-color: var(--black);
+  padding-right: 2rem;
 }
 /* mian starts here --------*_*------------------*/
 .component_logo_continer {
