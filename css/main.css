@@ -41,7 +41,7 @@ body {
   width: 2.65rem;
   position: fixed;
   top: 8rem;
-  margin-left: -0.5;
+  margin-left: -0.5rem;
   padding: 3rem 0;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -81,7 +81,7 @@ ul, li, dl, dt, dd {
 }
 .container__circle-explore {
   display: flex;
-  flex-direction: colume;
+  flex-direction: column;
   gap: 1rem;
 }
 .circle-explore {
@@ -247,13 +247,13 @@ div.cursors div.circle span.explore {
   margin: 0;
 }
 .container_hero {
-  width: 115%;
+  width: 105%;
   position: relative;
 }
 img.article-imgs__hero-component {
   display: block;
   width: 90%;
-  padding: 0 0 0 3rem;
+  padding: 0 0 0 8.7rem;
 }
 .typo-bound {
   display: block;
@@ -363,7 +363,7 @@ span.typo {
 .section-container {
   display: flex;
   flex-direction: row;
-  align-items: top;
+  align-items: flex-start;
 }
 .article-container_pages {
   display: flex;
@@ -518,7 +518,7 @@ slideout Navigation table
 .slideout_nav-top__opening {
   position: absolute;
   border-top: 1.2px solid var(--black);
-  padding-top: 0.5rem 2rem 2rem 0rem;
+  padding: 0.5rem 2rem 2rem 0;
   top: 150%;
   left: 0;
   font-size: 0.8rem;
@@ -589,7 +589,7 @@ slideout Navigation table
   line-height: 1.5;
 }
 .slideout_link:hover {
-  color: var(-black);
+  color: var(--black);
   font-weight: bolder;
   transition: transform 200ms ease-in;
 }
@@ -734,7 +734,7 @@ color: var(--dark-gray);
   width: 2.65rem;
   position: absolute;
   top: 9rem;
-  margin-left: -0.5;
+  margin-left: -0.5rem;
   padding: 3rem 0;
 }
 .fontface {
@@ -942,4 +942,7 @@ _____screen shot images adjustments only_____
 }
 .article__classes {
   width: 76%;
+}
+.screen_shot_imgs__we-are {
+  width: 72%;
 }
