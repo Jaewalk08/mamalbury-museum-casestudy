@@ -611,6 +611,9 @@ color: var(--dark-gray);
   background-color: var(--black);
   padding-right: 2rem;
 }
+.components_extended {
+  width: 200%;
+}
 /* mian starts here --------*_*------------------*/
 .component_logo_continer {
  position: relative;
@@ -659,9 +662,9 @@ color: var(--dark-gray);
   margin-top: 0;
   margin-bottom: 1rem;
 }
-.components>*, .row-flex>*, .col-flex>* {
+/*.components>*, .row-flex>*, .col-flex>* {
   border: 1px solid red;
-}
+}*/
 .exsample-heading {
   letter-spacing: 0.5rem;
   font-size: 1.1rem;
