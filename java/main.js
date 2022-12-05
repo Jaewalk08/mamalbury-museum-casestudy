@@ -40,11 +40,11 @@ images.forEach(image => {
 /* this is Top Nav */
 
 function openNav() {
-  document.getElementById("mamaSidenav").style.width = "250px";
+  document.getElementById("mama-sidenav").style.width = "250px";
 }
 
 function closeNav() {
-  document.getElementById("mamaSidenav").style.width = "0";
+  document.getElementById("mama-sidenav").style.width = "0";
 }
 
 
