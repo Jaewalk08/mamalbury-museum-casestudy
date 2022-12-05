@@ -481,6 +481,10 @@ slideout Navigation table
   font-weight: bolder;
   transition: transform 200ms ease-in;
 }
+.search_window {
+  font-size: 10rem;
+
+}
 /* need to fix this effects /* slide out image pop up with hover
 
 .slideout_img_container {
@@ -584,6 +588,11 @@ color: var(--dark-gray);
   width: 112%;
   height: 800px;
   background-color: var(--white);
+}
+.component_full-width__black {
+  width: 110%;
+  height: 800px;
+  background-color: var(--black);
 }
 /* mian starts here --------*_*------------------*/
 .component_logo_continer {
@@ -792,4 +801,7 @@ _____screen shot images adjustments only_____
 }
 .nav-top-header {
   width: 85%;
+}
+.slideout__search-compo {
+  width: 100%;
 }
