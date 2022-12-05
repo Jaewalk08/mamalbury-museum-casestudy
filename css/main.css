@@ -72,12 +72,6 @@ ul, li, dl, dt, dd {
   background-color: var(--black);
   padding: 0.5rem;
 }
-.link-button {
-  font-weight: 500;
-  font-size: 1rem;
-  border-bottom: 1.2px solid var(--black);
-  padding-bottom: 0.2rem;
-}
 .link-button__join-us {
   color: var(--white);
 }
@@ -104,10 +98,15 @@ ul, li, dl, dt, dd {
 .circle-explore__brown {
   background-color: var(--brown);
 }
+
 /* footer coding --------------------------------footer start*/
 .footer_container {
   display: block;
   position: relative;
+  padding-left: 1rem;
+}
+.compoment-detaile-headings--we-are {
+  padding-left: 1rem;
 }
 .footer__subscription_submit {
   background-color: transparent;
@@ -251,10 +250,10 @@ div.cursors div.circle span.explore {
   width: 115%;
   position: relative;
 }
-img.article-imgs__hero {
+img.article-imgs__hero-component {
   display: block;
   width: 90%;
-  padding: 0 0 0 10rem;
+  padding: 0 0 0 3rem;
 }
 .typo-bound {
   display: block;
@@ -282,6 +281,106 @@ span.typo {
 }
 .container_hero:hover .container_typo-hero {
   height: 100%;
+}
+.h1-heading {
+  font-weight: 500;
+  font-size: 0.75rem;
+  text-align: right;
+  border-bottom: 1.2px solid var(--black);
+  margin-right: 10.9rem;
+}
+.h2-texts-title {
+  font-weight: 500;
+  line-height: 0.2;
+}
+.h2-texts-2nd {
+  font-weight: 300;
+  line-height: 0.2;
+}
+.description-texts { 
+  line-height: 0.1;
+  padding: 0;
+}
+.h2-texts-title--name {
+  padding-top: 1rem;
+}
+.h2-texts-title--name, .description-texts__hero {
+  text-align: left;
+  padding-left: 26rem;
+  margin-right: 10.9rem;
+}
+.hero-text_img-wrapper {
+  display: block;
+  margin: 0 3rem 0 16rem;
+}
+.article-imgs__hero {
+  display: block;
+  width: 80%;
+  border-bottom: 1.2px solid var(--black);
+  padding-bottom: 3rem;
+}
+/* section start ---------------------------------@ ~ @------------*/
+.section-heading {
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+}
+.description__section-intro{
+  display: block;
+  font-size: 1rem;
+  width: 32rem;
+}
+.link-button {
+  font-weight: 500;
+  font-size: 0.87rem;
+  position: relative;
+}
+.link-button a {
+  text-decoration: none;
+  color: var(--black);
+  padding: 0;
+  margin: 0;
+}
+.link-button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 200ms ease-in;
+}
+.link-button:hover::after {
+  transform: scaleX(1);
+}
+
+.section-container {
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+}
+.article-container_pages {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10rem;
+  padding-top: 0;
+  margin-top: 0;
+}
+.img-flex-row_container {
+  display: flex;
+  flex-direction: row;
+}
+.img-flex-colume {
+  display: flex;
+  flex-direction: column;
+  width: 8.5%;
+  padding-right: 20px;
+}
+.article_img {
+ padding-bottom: 0.8rem;
 }
 
 /*  header /  Navigation    -----------^.-.^------------ */
@@ -824,4 +923,10 @@ _____screen shot images adjustments only_____
 }
 .slideout__search-compo {
   width: 100%;
+}
+.contents__hero {
+  width: 100%;
+}
+.article__classes {
+  width: 76%;
 }
