@@ -314,8 +314,8 @@
                                    </div>
 
                               <h5 class="compoment-detaile-headings">| Coding: Header navigation </h5>
-                                   <div class="wrapper_nav-top">
-                                        <ul class="container-nav-top container-nav-top__list">
+                                   <div class="wrapper_nav-top wrapper_nav-top__components">
+                                        <ul class="container-nav-top">
                                              <li class="nav-list"><a class="nav-list-link" href="#!">What&#39;s On</a></li>
                                              <li class="nav-list"><a class="nav-list-link" href="#!">Visit</a></li>
                                              <li class="nav-list"><a class="nav-list-link" href="#!">Explore</a></li>
@@ -343,9 +343,9 @@
 
                               <div class="colume-flex nav-slideout-wrapper"><!-- *important to remember* this is position: relative for opening hour-->
                                    <h5 class="compoment-detaile-headings">| Coding: Navigation side slideout </h5> 
-                                   <div class="nav-slideout-contents-wrapper">                               
+                                   <div class="nav-slideout-contents-wrapper nav-slideout-contents-wrapper__components">                               
                                         <div id="nav-visit" class="nav_left_container"><!--nav slideout visit contents-->                                        
-                                             <ul class="nav_left__contents-list">
+                                             <ul class="nav_left__contents-list nav_left__contents-list__components">
                                                   <li><a class="slideout_link slideout_link--plan" href="https://www.mamalbury.com.au/plan-your-trip">
                                                        Plan Your Trip</a></li>
                                                   <li><a class="slideout_link slideout_link--families-visit" href="https://www.mamalbury.com.au/kids-and-families">
@@ -362,7 +362,7 @@
                                              </ul>                                        
                                         </div><!--Navigation left slideoutdiv-->
 
-                                        <div class="slideout_nav-top__opening">
+                                        <div class="slideout_nav-top__opening slideout_nav-top__opening_components">
                                              <table>
                                                   <caption class="slideout_opening-title">We are an Art Museum</caption>
                                                   <tr>
@@ -407,12 +407,13 @@
 
 
 
-                    <div class="components component_full-width">
+                    <div class="components">
                          <h5 class="compoment-detaile-headings">| Header: Navigation | Side slideout | Search</h5>
                               <img class="screen_shot_imgs nav-top-header"
                                    src="img/dropdown-nav-list-img.png"
                                    alt="navigation slideout menu lists">
-
+                         
+                       <div class="component_full-width">
                          <h5 class="compoment-detaile-headings">| Coding: Navigation | Side slideout | Search</h5> 
                               <div class="component_logo_continer">
                                    <a href="index.html">                                                  
@@ -421,32 +422,32 @@
                               </div><!--logo container-->
                               <div class="component-container">
                                    <div class="wrapper_nav-top">
-                                             <ul class="container-nav-top container-nav-top__list">
-                                                  <li class="nav-list">                                             
-                                                  <p class="nav-list-link"><span class="nav-list-top nav-list__whaton" onclick="openNav()">What&#39;s On</span></p></li>
+                                        <ul class="container-nav-top">
+                                             <li class="nav-list">                                             
+                                             <p class="nav-list-link"><span class="nav-list-top nav-list__whaton" onclick="openNav()">What&#39;s On</span></p></li>
 
-                                                  <li class="nav-list">
-                                                  <p class="nav-list-link"><span class="nav-list-top nav-list__whaton" onclick="openNav()">Visit</span></p></li>
+                                             <li class="nav-list">
+                                             <p class="nav-list-link"><span class="nav-list-top nav-list__whaton" onclick="openNav()">Visit</span></p></li>
 
-                                                  <li class="nav-list">
-                                                  <p class="nav-list-link"><span class="nav-list-top nav-list__explore" onclick="openNav()">Explore</span></p></li>
+                                             <li class="nav-list">
+                                             <p class="nav-list-link"><span class="nav-list-top nav-list__explore" onclick="openNav()">Explore</span></p></li>
 
-                                                  <li class="nav-list">                                             
-                                                  <p class="nav-list-link"><span class="nav-list-top nav-list__classes" onclick="openNav()">Classes</span></p></li>
-                                                  
-                                                  <li class="nav-list">                                             
-                                                  <p class="nav-list-link"><span class="nav-list-top nav-list__classes" onclick="openNav()">Support</span></p></li>
+                                             <li class="nav-list">                                             
+                                             <p class="nav-list-link"><span class="nav-list-top nav-list__classes" onclick="openNav()">Classes</span></p></li>
+                                             
+                                             <li class="nav-list">                                             
+                                             <p class="nav-list-link"><span class="nav-list-top nav-list__classes" onclick="openNav()">Support</span></p></li>
 
-                                                  <li class="nav-list">                                             
-                                                  <p class="nav-list-link"><span class="nav-list-top nav-list__classes" onclick="openNav()">About</span></p></li>
-                                             </ul>
+                                             <li class="nav-list">                                             
+                                             <p class="nav-list-link"><span class="nav-list-top nav-list__classes" onclick="openNav()">About</span></p></li>
+                                        </ul>
 
-                                             <div class="container-nav-top__search">
-                                                  <p class="nav-list"><a class="nav-list-link" href="#!" title="search"><i class="fa-solid fa-magnifying-glass"></i>  Search MAMA</a></p>
-                                             </div><!--search menu wrapper-->
+                                        <div class="container-nav-top__search">
+                                             <p class="nav-list"><a class="nav-list-link" href="#!" title="search"><i class="fa-solid fa-magnifying-glass"></i>  Search MAMA</a></p>
+                                        </div><!--search menu wrapper-->
                                    </div><!--wrapper_nav-top-->
 
-
+                                   <div class="slideout-contents-container">
                                         <div class="nav_left_container"><!--nav slideout visit contents-->                                        
                                              <ul class="nav_left__contents-list">
                                                   <li><a class="slideout_link slideout_link--plan" href="https://www.mamalbury.com.au/plan-your-trip">
@@ -464,7 +465,6 @@
                                                   </li>
                                              </ul>                                        
                                         </div><!--Navigation left slideoutdiv-->
-          
                                         <div class="slideout_nav-top__opening">
                                              <table>
                                                   <caption class="slideout_opening-title">We are an Art Museum</caption>
@@ -501,18 +501,11 @@
                                                        <td></td>
                                                   </tr>
                                              </table>
-                                        </div><!--table-->
-                                   </div><!--component-container-->
-
-                                        <div class="close">
-                                        <a class="link-button link-button__close"  href="#!"><i class="fa-solid fa-xmark"></i> Close</a>
-                                        <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">**-->
-                                        </div><!--close-->
-                                
-
-                              
-                            </div><!--sildeout test-->
-                    </div><!--components: nav warpper-->
+                                        </div><!--table--> 
+                                   </div><!--slideout-contents-container: contents background-->     
+                              </div><!--component-container-->
+                            </div><!--component_full-width-->
+                    </div><!--components component_full-width->
 
 
 
@@ -563,44 +556,7 @@
        </main>
     </body>
 </html>
-<!--
-<img class="screen_shot_imgs"
-srcset="img/article__classes-paragraph-intro.png 1.3x"
-src="img/article__classes-paragraph-intro.png"
-alt="components image">
-<img class="screen_shot_imgs"
-srcset="img/articel__support-paragraph-intro.png 1.7x"
-src="img/articel__support-paragraph-intro.png"
-alt="components image">
-<img class="screen_shot_imgs"
-srcset="img/footer_paragraph__intro.png 2x"
-src="img/footer_paragraph__intro.png"
-alt="components image">
-<p class="page-text_intro">
-     We offer weekly art courses in a variety of disciplines, 
-     including photography, ceramics, drawing, acrylic painting, 
-     oil painting, watercolours, and printmaking.
-     </p>
-     <p class="page-text_intro page-text_intro--mememver">
-     Our members enjoy great benefits and discounts at the museum 
-     and with our partner organisations.
-     </p>
-     <p class="page-text_intro page-tex_intro--join">
-     MAMA acknowledges the Wiradjuri people as the traditional 
-     custodians of the land upon which we are located. We pay our 
-     respects to the Elders past, present and future for they hold 
-     the memories, culture, tradition and hopes of Aboriginal 
-     and Torres Strait Islander people that contribute to our community.
-     </p>
 
-     <div class="row-flex row-flex__small-padding">
-          <div class="colume-flex">
-               <h5 class="compoment-detaile-headings">| 
-               <img class="screen_shot_imgs screen_shot_imgs--button" src="img/visit_article.png" alt="visit article image">
-               <img class="screen_shot_imgs screen_shot_imgs--button_action" src="img/visit_article-button.png" alt="visit article image">
-          </div><!--col flex for image-->
-          
-     <!--</div><!--row flex for image-->
      
 
 

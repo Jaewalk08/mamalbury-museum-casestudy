@@ -278,7 +278,7 @@ span.typo {
   width: 100%;
   height: 0;
   opacity: 1;
-  transition: 0.9s ease;
+  transition: 0.65s ease;
 }
 .container_hero:hover .container_typo-hero {
   height: 100%;
@@ -292,12 +292,15 @@ span.typo {
   align-items: center;
   background-color: var(--white);
   padding: 1.5rem 0;
-  padding-left: 15%;
+  padding-bottom: 6rem;
   margin: 0;
 }
 .wrapper_nav-top>* {
   padding: 0;
   margin: 0;
+}
+.wrapper_nav-top__components {
+  padding-bottom: 1.5rem;
 }
 .container-nav-top__search>* {
   padding: 0;
@@ -385,22 +388,39 @@ span.typo {
   line-height: 1.5;
   border-top: 1.2px solid var(--black);
   padding-top: 0.3rem;
+  margin-right: 5rem;
 }
 .component-container {
+  position: relative;
+
   display: flex;
   flex-direction: column;
+  padding-left: 20%;
 }
-.container-nav-top__list {
-  padding-bottom: 10rem;
-  margin: 0;
+.slideout-contents-container {
+  width: 60%;
 }
+
 /*
 slideout Navigation table
 */
-.nav-slideout-contents-wrapper {
+.slideout_nav-top__opening {
+  position: absolute;
+  border-top: 1.2px solid var(--black);
+  padding-top: 0.5rem;
+  padding-right: 2rem;
+  top: 150%;
+  left: 0;
+  font-size: 0.8rem;
+  font-weight: 400;
+  text-align: left;
+  line-height: 1.15;
+  margin-left: 20%;
+}
+.nav-slideout-contents-wrapper__components {
   position: relative;
 }
-.slideout_nav-top__opening {
+.slideout_nav-top__opening_components {
   position: absolute;
   top: 21rem; /*24.8rem;*/
   left: 0;
@@ -487,6 +507,14 @@ slideout Navigation table
 }
 */
 /* footer Coding starts here*/
+.nav_left__contents-list__components {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  border-top: 1.2px solid var(--black);
+  padding-top: 0.3rem;
+  margin-right: 5rem;
+}
 .footer_contents--wrapper {
   padding: 1rem;
   background-color: var(--black);
@@ -556,6 +584,8 @@ color: var(--dark-gray);
 }
 .component_full-width {
   width: 112%;
+  height: 800px;
+  background-color: var(--white);
 }
 /* mian starts here --------*_*------------------*/
 .component_logo_continer {
@@ -564,7 +594,7 @@ color: var(--dark-gray);
 .fixed-logo__components {
   width: 2.65rem;
   position: absolute;
-  top: 0rem;
+  top: 9rem;
   margin-left: -0.5;
   padding: 3rem 0;
 }
@@ -763,5 +793,5 @@ _____screen shot images adjustments only_____
   width: 120%;
 }
 .nav-top-header {
-  width: 98%;
+  width: 85%;
 }
