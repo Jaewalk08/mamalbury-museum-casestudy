@@ -19,13 +19,34 @@
       <header>
         <div class="nav-top-container"><!--nav top contain all together-->
           <div class="nav-top-left"><!--left side nav container-->
+
+          <script>
+            function openNav() {
+              document.getElementById("whats-on").style.width = "250px";
+            }
+            
+            function closeNav() {
+              document.getElementById("whats-on").style.width = "0";
+            }
+          </script>
+
             <ul class="nav-top-wrapper"><!--nav top list wrapper-->
-                <li class="nav-list" id="index.html#whats-on"><a class="nav-list-link" href="#!">What&#39;s On</a></li>
-                <li class="nav-list" id="index.html#visit"><a class="nav-list-link" href="#!">Visit</a></li>
-                <li class="nav-list" id="index.html#explore"><a class="nav-list-link" href="#!">Explore</a></li>
-                <li class="nav-list" id="index.html#classes"><a class="nav-list-link" href="#!">Classes</a></li>
-                <li class="nav-list" id="index.html#support"><a class="nav-list-link" href="#!">Support</a></li>
-                <li class="nav-list" id="index.html#about"><a class="nav-list-link" href="#!">About</a></li>
+                <li class="nav-list">
+                  <span id="whats-on" class="sidenav">
+                    <a class="nav-list-link closebtn" href="javascript:void(0)" onclick="openNav()">What&#39;s On</a>
+                    <span class="embed-slideout-container">
+                      <iframe src="whats-on.html" title="whats-on" class="slideout-contents" frameborder="0" allowfullscreen="" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" msallowfullscreen="true"></iframe>
+                    </span><!--iframe: embed-slideout-container-->
+                  </span><!--what-on div-->
+                </li>
+                
+              
+                
+              <li class="nav-list" id="visit"><a class="nav-list-link closebtn" href="javascript:void(0)" onclick="openNav()">Visit</a></li>
+                <li class="nav-list" id="explore"><a class="nav-list-link closebtn" href="javascript:void(0)" onclick="openNav()">Explore</a></li>
+                <li class="nav-list" id="classes"><a class="nav-list-link closebtn" href="javascript:void(0)" onclick="openNav()">Classes</a></li>
+                <li class="nav-list" id="support"><a class="nav-list-link closebtn" href="javascript:void(0)" onclick="openNav()">Support</a></li>
+                <li class="nav-list" id="about"><a class="nav-list-link closebtn" href="javascript:void(0)" onclick="openNav()">About</a></li>
             </ul>
           </div><!--nav-top-left: left nav only container-->
 
@@ -34,53 +55,7 @@
           </div><!--search container-->
         </div><!--nav-top-container: nav top contain all together-->
 
-        <div class="slidout_container" id="what-on"><!--slideout container: what's on / background: white -->
-          <div> <!-- slide out : what's on contents-->
-            <ul class="slidout_list_container">
-              <li class="slideout-list"><a href="https://www.mamalbury.com.au/exhibitions">Exhibitions</a></li>
-              <li class="slideout-list"><a href="https://www.mamalbury.com.au/events">Events</a></li>
-            </ul>
-          </div><!--slidout-list-container-->
-
-          <div class="slideout_opening_container"><!--hold opening hours-->
-            <table class="top-opening">
-              <caption class="slideout_opening-title">We are an Art Museum</caption>
-              <tr>
-                   <th class="slideout_opening-dates">Monday-Friday</th>
-                   <td class="slideout_opening-time">10am-5pm</td>
-              </tr>
-              <tr>
-                   <th class="slideout_opening-dates">Saturday</th>
-                   <td class="slideout_opening-time">10am-4pm</td>
-              </tr>
-              <tr>
-                   <th class="slideout_opening-dates">Sunday</th>
-                   <td class="slideout_opening-time">10am-4pm</td>
-              </tr>
-              <tr>
-                   <th class="slideout_opening-dates">Public Holidays</th>
-                   <td class="slideout_opening-time">10am-4pm</td>
-              </tr>
-              <tr>
-                   <th class="slideout_opening-dates">Anzac Day</th>
-                   <td class="slideout_opening-time"></td>
-              </tr>
-              <tr>
-                   <th class="slideout_opening-dates">Christmas Closed</th>
-                   <td class="slideout_opening-time">10am-5pm</td>
-              </tr>
-              <tr>
-                   <th class="slideout_opening-dates">Good Friday Closed</th>
-                   <td class="slideout_opening-time"></td>
-              </tr>
-              <tr>
-                   <th class="slideout_opening-free_entry">Free Entry</th>
-                   <td></td>
-              </tr>
-            </table>
-          </div><!--table: top-nav_opening-list-container-->
-        </div><!--slidout-contents-container-->
       </header>
     </div><!--override-html-container | nav override top of main sections -->
   </body>
-  
+</html> 

@@ -47,8 +47,6 @@ html {
     color: var(--black);
     line-height: 1.4;
     margin: 0;
-    padding-left: 10%;
-    padding-right: 10%;
 
     background-color: gray;
   }
@@ -69,7 +67,7 @@ html {
   /* -----------------------top nav & slide out set-ups ----------------------*/
   .override-html-container { /*---flot top of body | top logo, top nav, slide out, and opening hours----*/
     display: block;
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 100%;
     background-color: transparent;
@@ -80,12 +78,11 @@ html {
     position: absolute;
     top: 8rem;
     margin-left: -0.1rem;
-    padding: 3rem 0;
 
     z-index: -2;
   }
   /* header starts here */
-  header, .nav-top-container>* {
+  header, .nav-top-container, .slidout_container>* {
     border: 1px solid red;
   }
   .nav-top-wrapper {
@@ -109,6 +106,7 @@ html {
   .nav-list {
     padding-right: 1.8rem;
     margin: 0;
+    sursor: pointer;
   }
   .nav-list:last-child {
     padding-right: 0;
@@ -117,28 +115,30 @@ html {
     padding-right: 0.5rem;
   }
   
-  /* slide out : settings */
-  .slidout_container {
-    padding: 1.2rem 13rem;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+  /* slide out : settings | iframe html */ 
+@media screen and (width: 100%, height: 100%) {
+  .sidenav {padding-top: 0;}
+}
+  .embed-slideout-container {
+    position: relative;
+    padding: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .embed-slideout-container iframe {
     position: absolute;
     top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
-  .slidout-list-container {
+  iframe.slideout-contents::after {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+  .slidout_container {
     display: block;
     position: absolute;
-    top: 9.5rem;
-    left: 13rem;
-    
-    font-size: 1.2rem
-  }
-  .slideout_opening_container {
-    display: block;
-    position: absolute;
-    top: ;
-    left: 13rem;
-
-    font-size: 1rem;
+    top: 8rem;
   }
