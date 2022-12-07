@@ -101,7 +101,7 @@ html {
     justify-content: space-between;
     align-items: center;
 
-    padding: 1.2rem 13rem;
+    padding: 1.2rem 13rem;  /* padding control | nav */
     background-color: var(--white);
 
     z-index: -1;
@@ -116,7 +116,29 @@ html {
   .fa-solid {
     padding-right: 0.5rem;
   }
-  border: 1px solid red;
-
   
- 
+  /* slide out : settings */
+  .slidout_container {
+    padding: 1.2rem 13rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 0;
+  }
+  .slidout-list-container {
+    display: block;
+    position: absolute;
+    top: 9.5rem;
+    left: 13rem;
+    
+    font-size: 1.2rem
+  }
+  .slideout_opening_container {
+    display: block;
+    position: absolute;
+    top: ;
+    left: 13rem;
+
+    font-size: 1rem;
+  }
