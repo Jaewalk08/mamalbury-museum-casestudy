@@ -1,10 +1,21 @@
+@font-face {
+    font-family: 'test untitled sans';
+    src: url(test-untitled-sans-medium.woff2);
+    src: url(test-untitled-sans-regular.woff2);
+}
+@font-face {
+    font-family: 'test untitled serif';
+    src: url(test-untitled-serif-medium.woff2);
+    src: url(test-untitled-serif-regular.woff2);
+}
 :root {
-    --font-san-serif: 'Yantramanav', sans-serif;
-    --font-serif-sub: 'EB Garamond', serif;
+    --font-san-serif: 'test untitled sans', sans-serif;
+    --font-serif-sub: 'test untitled serif', serif;
 
     /*color */
     --black: #000;
     --white: #ffffff;
+    --forgroud: #66666600;
     --gray-scale: #ffffff00;
     --gray-scale-0: rgba(255, 255, 255, 0);
 
@@ -30,27 +41,16 @@ html {
     padding: 0;
   }
   body {
-    font-family: var( --font-san-serif);
+    font-family: var(--font-san-serif);
     font-weight: 400;
-    font-size: 13px;
+    font-size: 12px;
     color: var(--black);
     line-height: 1.4;
     margin: 0;
-    padding: 0;
-    position: relative;
-    background-color: var(--white);
-  }
-  .override-html-container {
-    display: block;
-    position: absolute;
-  }
-  .mama-logo {
-    display: block;
-    width: 2.65rem;
-    position: fixed;
-    top: 8rem;
-    margin-left: -0.1rem;
-    padding: 3rem 0;
+    padding-left: 10%;
+    padding-right: 10%;
+
+    background-color: gray;
   }
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-san-serif);
@@ -66,34 +66,57 @@ html {
     padding-left: 0;
     margin-left: 0;
   }
+  /* -----------------------top nav & slide out set-ups ----------------------*/
+  .override-html-container { /*---flot top of body | top logo, top nav, slide out, and opening hours----*/
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+  }
+  .mama-logo {
+    display: block; 
+    width: 2.65rem;
+    position: absolute;
+    top: 8rem;
+    margin-left: -0.1rem;
+    padding: 3rem 0;
 
+    z-index: -2;
+  }
+  /* header starts here */
+  header, .nav-top-container>* {
+    border: 1px solid red;
+  }
   .nav-top-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 0;
-    padding-bottom: 6.5rem;
     margin: 0;
   }
-  .slidout-contents-container { /* slide out padding control here / slide out contain all*/
-    position: relative;
-    padding-left: 20%;
+  .nav-top-container {  /*  <!--nav top contain all together-->   */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1.2rem 13rem;
+    background-color: var(--white);
+
+    z-index: -1;
   }
-  .top-nav_opening-list-container { /* slide out position control here / slide out contain opening hours*/
-    position: absolute;
-    top: 150%;
+  .nav-list {
+    padding-right: 1.8rem;
+    margin: 0;
   }
-  .top-opening {
-    border-top: 1.2px solid var(--black);
-    padding: 0.5rem 2rem 2rem 0;
-    font-size: 0.8rem;
-    font-weight: 400;
-    text-align: left;
-    line-height: 1.15;
+  .nav-list:last-child {
+    padding-right: 0;
   }
-  .top-nav_opening-list {
-    position: absolute;
-    top: 150%;
-    left: 20%;
+  .fa-solid {
+    padding-right: 0.5rem;
   }
+  border: 1px solid red;
+
+  
+ 
