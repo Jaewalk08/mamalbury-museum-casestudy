@@ -180,40 +180,48 @@
         </script>
       </header>
 
+<!------------------------------- main -------------------------------->      
+    <div class="full-blanke-wrapper"><!-- cover everything : main + footer-->
+
       <main class="grid-setup">
+        
         <div class="flex-section-container">
+<!------------------------------- section start | hero -------------------------------->  
           <section class="section-container section-container__hero">
+          
+            <div class="section-wrappall section-wrappall__hero">
 
-            <div class="section_hero_flex">
-              <h1 class="section-heading section-heading__hero">MURRAY ART MUSEUM ALBURY</h1>
+              <div section-intro-wrapper>
+                <h1 class="section-heading section-heading__hero">MURRAY ART MUSEUM ALBURY</h1>
+                <div class="event-description">
+                  <h2 class="description description__title">28 October 2022 - 19 February 2023</h2>
+                  <p class="description description__text">Exhibitions</p>
+                </div>
+              </div><!-- section_hero_intro-->
 
-              <div class="event-description">
-                <h2 class="description description__title">28 October 2022 - 19 February 2023</h2>
-                <p class="description description__text">Exhibitions</p>
-              </div>
-            </div><!---section_hero_flex : Flex for top hero -->
-              <div>
+              <div class="hero-img-wrapper">
                 <a href="#!">                                   
-                  <img class="article-imgs article-imgs__hero" src="../img/bound_hero.jpeg" alt="Korean petchwork">
-                </a>
-              </div>
-            
-            <div class="description-wrapper">
-              <h2 class="description discription__title">Taerim Claire Jeon,</h2>
-              <p class="description description__text"><em>Linked Story</em> (detail), 2022,</p>
-              <p class="description description__text">Ramie,</p>
-              <p class="description description__text">Image courtesy of the artist.</p>
-            </div><!--description-wrapper-->
+                  <img class="article-imgs article-imgs__hero-component" src="../img/bound_hero.jpeg" alt="Korean petchwork"></a>
 
-            <div class="bound-container">
-              <span class="bound">
-                <a href="#!"> 
-                <img class="typo-bound" src="img/bound-typo-img-454x250.svg" alt="bound typo image">
-                </a>
-              </span>
-            </div><!--hero-bound_container-->
+                  <div class="bound-container">
+                    <span class="bound">
+                      <a href="#!"> 
+                      <img class="typo-bound" src="img/bound-typo-img-454x250.svg" alt="bound typo image">
+                      </a>
+                    </span>
+                  </div><!--hero-bound_container-->
+              </div><!-- hero-img-wrapper-->
+
+              <div class="description-wrapper">
+                <h2 class="description discription__title">Taerim Claire Jeon,</h2>
+                <p class="description description__text"><em>Linked Story</em> (detail), 2022,</p>
+                <p class="description description__text">Ramie,</p>
+                <p class="description description__text">Image courtesy of the artist.</p>
+              </div><!-- description-wrapper  -->
+      
+            </div><!---section-wrappall |   section_hero_flex : Flex for top hero -->
           </section>
-
+<!------------------------------- section start | 1. what's On -------------------------------->
           <section class="section-container section-container__whats-on">
             <h3 class="section-heading">What's On</h3>
 
@@ -267,7 +275,7 @@
                 </article>
               </div>
           </section>
-
+<!------------------------------- section start | 2. visit us -------------------------------->
           <section class="section-container section-container__whats-on">
             <h3 class="section-heading">Visite Us</h3>
 
@@ -302,7 +310,7 @@
                 </article>
               </div>
           </section>
-
+<!------------------------------- section start | 3. classes -------------------------------->
           <section class="section-container section-container__whats-on">
             <h3 class="section-heading">Classes</h3>
 
@@ -337,7 +345,7 @@
                 </article>
               </div>
           </section>
-
+<!------------------------------- section start | 4. became a MAMA member -------------------------------->
           <section class="section-container section-container__whats-on">
             <img src="members.jpeg" alt="women in exhibition space">
 
@@ -354,12 +362,13 @@
           </div><!-- flex-section-container FULL BODY-->
 
       </main><!--grid-setup-->
+<!------------------------------- section start | footer -------------------------------- background change ------------>
 
           <div class="we_are_mama">
             <h4 class="we-are-m">We are an Art Museum</h4>
           </div>
 
-<!---------background change ------------>
+<!------------------------------- section start | footer -------------------------------- background change ------------>
     
       <footer class="footer-wrapper">
           <div class="footer-group-container footer-group-container__left">
@@ -492,5 +501,6 @@
           <li><a href="#!">Accessibility</a></li>
         </ul>
       </footer>
+    </div><!--full-blanke-wrapper  : cover main + footer | flex-->  
   </body>
 </html> 

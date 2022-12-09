@@ -334,13 +334,47 @@ header, .nav-top-container, .slidout_container>* {
   display: flex;
   flex-direction: column;
 }
-.section-container__hero {
+
+/* main starts here */
+div.full-blanke-wrapper {
+  display: flex;
+  flex-direction: column;
+  
+}
+main.grid-setup {
+
+  flex-grow: 1;
+  flex-shrink: 1;
+  position: initial !important;
+  width: 100%;
+  overflow: hidden;
+  outline: none;
+  display: block;
+  height: 100vh;
+}
+.section-container {  /* all section grid */
   padding-top: 200px;
-  display: grid;
-  grid-template-columns: repeat(12, minmax(0px, 1fr));
-  margin-bottom: 160px !important;
   padding-left: 112px;
   padding-right: 32px;
+  margin-bottom: 160px !important;
+
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0px, 1fr));
+  grid-template-rows: auto;
+
   overflow: hidden;
   position: relative;
 }
+
+.section-intro-wrapper {
+  opacity: 1;
+  visibility: inherit;
+  transform: translate(0px, 0px);
+
+  position: relative;
+  grid-column: 3 / -2;
+  margin-top: -25px;
+  margin-bottom: 26px;
+}
+/* hero */
+
