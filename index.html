@@ -11,51 +11,164 @@
     </head>
 
   <body>
-    <div class="override-html-container"> <!--nav override top of main sections-->
       <div class="fixed-logo fixed-logo__black">
         <a href="index.html"><img class="mama-logo mama-logo-black" src="img/mama_logo-black.png" alt="mama museum logo black"></a>
       </div>
       
       <header>
-        <div class="nav-top-container"><!--nav top contain all together-->
-          <div class="nav-top-left"><!--left side nav container-->
+        <div id="slideOut" class="sidenav"><!-- this is slide out container and white background 50%-->
+          <div class="slideout_opening_container"><!--hold opening hours-->
+            <table class="top-opening">
+              <caption class="slideout_opening-title">We are an Art Museum</caption>
+              <tr>
+                  <th class="slideout_opening slideout_opening__dates">Monday-Friday</th>
+                  <td class="slideout_opening slideout_opening__time">10am-5pm</td>
+              </tr>
+              <tr>
+                  <th class="slideout_opening slideout_opening__dates">Saturday</th>
+                  <td class="slideout_opening slideout_opening__time">10am-4pm</td>
+              </tr>
+              <tr>
+                  <th class="slideout_opening slideout_opening__dates">Sunday</th>
+                  <td class="slideout_opening slideout_opening__time">10am-4pm</td>
+              </tr>
+              <tr>
+                  <th class="slideout_opening slideout_opening__dates">Public Holidays</th>
+                  <td class="slideout_opening slideout_opening__time">10am-4pm</td>
+              </tr>
+              <tr>
+                  <th class="slideout_opening slideout_opening__dates">Anzac Day</th>
+                  <td class="slideout_opening slideout_opening__time"></td>
+              </tr>
+              <tr>
+                  <th class="slideout_opening slideout_opening__dates">Christmas Closed</th>
+                  <td class="slideout_opening slideout_opening__time">10am-5pm</td>
+              </tr>
+              <tr>
+                  <th class="slideout_opening slideout_opening__dates">Good Friday Closed</th>
+                  <td class="slideout_opening slideout_opening__time"></td>
+              </tr>
+              <tr>
+                  <th class="slideout_opening slideout_opening__free_entry">Free Entry</th>
+                  <td></td>
+              </tr>
+            </table>
+          </div><!--table: slideout_opening_container : hold opening hours-->
 
-          <script>
-            function openNav() {
-              document.getElementById("whats-on").style.width = "250px";
-            }
-            
-            function closeNav() {
-              document.getElementById("whats-on").style.width = "0";
-            }
-          </script>
+          <div class="slideout-background-53"></div>
+          <div class="slideout-background-100"></div>
 
-            <ul class="nav-top-wrapper"><!--nav top list wrapper-->
-                <li class="nav-list">
-                  <span id="whats-on" class="sidenav">
-                    <a class="nav-list-link closebtn" href="javascript:void(0)" onclick="openNav()">What&#39;s On</a>
-                    <span class="embed-slideout-container">
-                      <iframe src="whats-on.html" title="whats-on" class="slideout-contents" frameborder="0" allowfullscreen="" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" msallowfullscreen="true"></iframe>
-                    </span><!--iframe: embed-slideout-container-->
-                  </span><!--what-on div-->
-                </li>
-                
+        </div><!-- id="slideOut" class="sidenav : this is slide out container and white background 50%-->
+
+        <div class="background"></div> <!-- background for nav-top lists-->
+
+        <div class="nav-top-container" onclick="openNav()"> <!-- slideout nav open contents container // nav top contain all together-->
+          <ul class="nav-top-wrapper"><!--nav top list wrapper-->
+            <li class="nav-list nav-top-open-contents">
+              <div class="nav-top-list">
+              <p class="nav-button"><a class="nav-list-link" href="#slideOut">What&#39;s On</a></p>
+              <span class="topping nav-list-link"><a href="#whatsOn">.</a></span>
+              </div><!--nav-top-list : margin control with contents below -->
               
+              <div class="nav-contents" id="whatsOn">
+                <ul class="slidout_list_container">
+                  <li class="slideout-list"><a href="https://www.mamalbury.com.au/exhibitions">Exhibitions</a></li>
+                  <li class="slideout-list"><a href="https://www.mamalbury.com.au/events">Events</a></li>
+                </ul>
+              </div><!--nav-contents-->
+            </li>
+        
+            <li class="nav-list nav-top-open-contents">
+              <div class="nav-top-list">
+              <p class="nav-button" aria-label="what's on" title="what's on"><a class="nav-list-link" href="#slideOut" onclick="open('#Visit')">Visit</a></p>
+              </div><!--nav-top-list : margin control with contents below -->
+              
+              <div class="nav-contents" >
+                <ul class="slidout_list_container" id="Visit">
+                  <li class="slideout-list"><a href="https://www.mamalbury.com.au/exhibitions">Plan Your Trip</a></li>
+                  <li class="slideout-list"><a href="https://www.mamalbury.com.au/events">Kids & Families</a></li>
+                  <li class="slideout-list"><a href="https://www.mamalbury.com.au/events">Shop</a></li>
+                  <li class="slideout-list"><a href="https://www.mamalbury.com.au/events">Eat</a></li>
+                  <li class="slideout-list"><a href="https://www.mamalbury.com.au/events">School Visits</a></li>
+                  <li class="slideout-list"><a href="https://www.mamalbury.com.au/events">Venue Hire</a></li>
+                </ul>
+              </div><!--nav-contents-->
+            </li>
+        
+            <li class="nav-list nav-top-open-contents">
+              <div class="nav-top-list">
+              <p class="nav-button" aria-label="what's on" title="what's on"><a class="nav-list-link" href="#slideOut" onclick="open('#Explore')">Explore</a></p>
+              </div><!--nav-top-list : margin control with contents below -->
+              
+              <div class="nav-contents" id="Explore">
+                <ul class="slidout_list_container">
+                  <li class="slideout-list"><a href="https://www.mamalbury.com.au/exhibitions">Collection</a></li>
+                  <li class="slideout-list"><a href="https://www.mamalbury.com.au/events">Exhibition Archive</a></li>
+                </ul>
+              </div><!--nav-contents-->
+            </li>
+        
+            <li class="nav-list nav-top-open-contents">
+              <div class="nav-top-list">
+              <p class="nav-button" aria-label="what's on" title="what's on"><a class="nav-list-link" href="#slideOut" onclick="open('#Classes')">Classes</a></p>
+              </div><!--nav-top-list : margin control with contents below -->
+              
+              <div class="nav-contents" id="Classes">
+                <ul class="slidout_list_container">
+                  <li class="slideout-list"><a href="https://www.mamalbury.com.au/exhibitions">Short Courses</a></li>
+                  <li class="slideout-list"><a href="https://www.mamalbury.com.au/events">Workshops</a></li>
+                  <li class="slideout-list"><a href="https://www.mamalbury.com.au/events">Kids & Teens</a></li>
+                </ul>
+              </div><!--nav-contents-->
+            </li>
+        
+            <li class="nav-list nav-top-open-contents">
+              <div class="nav-top-list">
+              <p class="nav-button" aria-label="what's on" title="what's on"><a class="nav-list-link" href="#slideOut" onclick="open('#Support')">Support</a></p>
+              </div><!--nav-top-list : margin control with contents below -->
                 
-              <li class="nav-list" id="visit"><a class="nav-list-link closebtn" href="javascript:void(0)" onclick="openNav()">Visit</a></li>
-                <li class="nav-list" id="explore"><a class="nav-list-link closebtn" href="javascript:void(0)" onclick="openNav()">Explore</a></li>
-                <li class="nav-list" id="classes"><a class="nav-list-link closebtn" href="javascript:void(0)" onclick="openNav()">Classes</a></li>
-                <li class="nav-list" id="support"><a class="nav-list-link closebtn" href="javascript:void(0)" onclick="openNav()">Support</a></li>
-                <li class="nav-list" id="about"><a class="nav-list-link closebtn" href="javascript:void(0)" onclick="openNav()">About</a></li>
-            </ul>
-          </div><!--nav-top-left: left nav only container-->
+              <div class="nav-contents" id="Support">
+                <ul class="slidout_list_container">
+                  <li class="slideout-list"><a href="https://www.mamalbury.com.au/exhibitions">Donate</a></li>
+                  <li class="slideout-list"><a href="https://www.mamalbury.com.au/events">Thank You</a></li>
+                  <li class="slideout-list"><a href="https://www.mamalbury.com.au/exhibitions">Art Foundation</a></li>
+                  <li class="slideout-list"><a href="https://www.mamalbury.com.au/events">Members</a></li>
+                  <li class="slideout-list"><a href="https://www.mamalbury.com.au/exhibitions">Artists</a></li>
+                  <li class="slideout-list"><a href="https://www.mamalbury.com.au/events">Volunteers</a></li>
+                </ul>
+              </div><!--nav-contents-->
+            </li>
+        
+            <li class="nav-list nav-top-open-contents">
+              <div class="nav-top-list">
+              <p class="nav-button" aria-label="what's on" title="what's on"><a class="nav-list-link" href="#slideOut" onclick="open('#About')">About</a></p>
+              </div><!--nav-top-list : margin control with contents below -->
+                
+              <div class="nav-contents" id="About">
+                <ul class="slidout_list_container">
+                  <li class="slideout-list"><a href="https://www.mamalbury.com.au/exhibitions">People</a></li>
+                  <li class="slideout-list"><a href="https://www.mamalbury.com.au/events">Board</a></li>
+                  <li class="slideout-list"><a href="https://www.mamalbury.com.au/exhibitions">History</a></li>
+                  <li class="slideout-list"><a href="https://www.mamalbury.com.au/events">National Photography Prize</a></li>
+                  <li class="slideout-list"><a href="https://www.mamalbury.com.au/exhibitions">Careers</a></li>
+                  <li class="slideout-list"><a href="https://www.mamalbury.com.au/events">Media</a></li>
+                  <li class="slideout-list"><a href="https://www.mamalbury.com.au/exhibitions">Contact</a></li>
+                </ul>
+              </div><!--nav-contents-->
+            </li>
+          </ul>
+        </div><!-- onclick="openNav()" : slideout nav open contents container // nav-top-container : flex nav line up <<->> -->
 
-          <div class="nav-top_search-container">
-              <p class="nav-list" id="index.html#search"><a class="nav-list-link" href="#!" title="search"><i class="fa-solid fa-magnifying-glass"></i>  Search MAMA</a></p>
-          </div><!--search container-->
-        </div><!--nav-top-container: nav top contain all together-->
+        <script>
+          function openNav() {
+            document.getElementById("slideOut").style.width = "100%";
+          }
+        
+          function closeNav() {
+            document.getElementById("Whats-On").style.width = "0";
+          }
+        </script>
 
       </header>
-    </div><!--override-html-container | nav override top of main sections -->
   </body>
 </html> 
