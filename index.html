@@ -203,8 +203,8 @@
             <h1 class="section-heading section-heading__hero">MURRAY ART MUSEUM ALBURY</h1>
 
             <div class="event-description">
-              <h2 class="description__title">28 October 2022 - 19 February 2023</h2>
-              <p class="description__text">Exhibitions</p>
+              <h2 class="description__title description__title_hero">28 October 2022 - 19 February 2023</h2>
+              <p class="description__text description__text_hero">Exhibitions</p>
             </div><!-- event-description -->
           </div> <!---section-wrap-position | Flex for top hero : control each elements in section  grid / flex -->
 
@@ -213,18 +213,23 @@
           </div> <!--- hero-img-wrapper -->
 
           <div class="description-wrapper">
-            <h2 class="description__title">Taerim Claire Jeon,</h2>
-            <p class="description__text"><em>Linked Story</em> (detail), 2022,</p>
-            <p class="description__text">Ramie,</p>
-            <p class="description__text">Image courtesy of the artist.</p>
+            <h2 class="description__title description__title_hero">Taerim Claire Jeon,</h2>
+            <div class="description-text-wrapper">
+              <p class="description__text description__text_hero"><em>Linked Story</em> (detail), 2022,</p>
+              <p class="description__text description__text_hero">Ramie,</p>
+              <p class="description__text description__text_hero">Image courtesy of the artist.</p>
+            </div>
           </div><!-- description-wrapper  -->
     
         </section>
 
         <!------------------------------- section start | 1. what's On -------------------------------->
+
         <section class="section-full-grid section-full-grid__whats-on">
-          
-          <h3 class="section-heading section-heading__whats-on">What&#39;s On</h3>
+          <div class="line"></div>
+          <div class="section-heading-container">
+            <h3 class="section-heading section-heading__whats-on">What&#39;s On</h3>
+          </div> <!--section-heading-container-->
 
           <div class="article_wrapper">
             <div class="article-direction-x"> <!---maybe gird vs flex-->
@@ -311,12 +316,16 @@
             </div> <!--- article direction-x ; this will control the direction to x -->
           </div> <!----- article_wrapper -->
         </section>
-      
-      
-<!------------------------------- section start | 2. visit us -------------------------------->
-        <section class="section-full-grid section-full-grid__visit">
-          <h3 class="section-heading section-heading__visit">Visit Us</h3>
 
+<!------------------------------- section start | 2. visit us -------------------------------->
+     
+        <section class="section-full-grid section-full-grid__visit">
+          <div class="line"></div>
+          <div class="section-heading-container">
+            <h3 class="section-heading section-heading__visit">Visit Us</h3>
+          </div> <!--section-heading-container-->
+
+          
           <div class="section-intro-wrapper">
             <p class="section-intro_text">Come experience everything the museum has to offer 
               from a wide range experiences and activities that every member of the family can enjoy.</p>
@@ -325,7 +334,7 @@
               Events &#38; Experiences <i class="fa-solid fa-arrow-right-long"></i></a></p>
           </div><!-- section-intro wrapper-->
 
-          <div class="article_wrapper article_wrapper__flex"><!---maybe gird vs flex???-->
+          <div class="article_wrapper article_wrapper__flex"><!---grid-->
               <article class="img-flex-colume">
                 <img class="article_img" src="plan_your_trip.jpeg" alt="inside museum space view">
                 <h2 class="description discription__title">Plan Your Trip</h2>
@@ -348,6 +357,7 @@
               </article>
             </div>
         </section>
+
     </main>
   </div> <!--- full-blanke-wrapper | cover everything : main + footer ---->
   </body>
