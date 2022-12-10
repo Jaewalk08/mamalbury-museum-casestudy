@@ -88,9 +88,6 @@
 /*---------------------------------------*/
   }
 /* header starts here */
-section> * {
-  border: 1px solid red;
-}
 .nav-top-container {
   display: flex;
   flex-direction: row;
@@ -319,12 +316,6 @@ section> * {
 
 /* main starts here ----------------*/
 
-/* grid-setup
-@media (min-width: 1024px) {
-
-@media (min-width: 1024px) {
- 
-}*/
 /* --------------- hero  -------------------*/
 div.full-blanke-wrapper {  /* top div above main : full cover main + footer  BUT no header*/
   height: 100vh;
@@ -344,13 +335,11 @@ main {
   outline: none;
 }
 .section-full-grid { /* cover each section in same grid */
-  background-color: antiquewhite;
-
   display: grid;
   grid-gap: 2rem;
   gap: 2rem;
   grid-template-columns: repeat(12, minmax(0px, 1fr));
-  grid-template-rows: repeat(1fr);
+  grid-template-rows: repeat(autofit, minmax(0px, 1fr));
   
   padding-top: 11.9rem;
   margin-bottom: 13rem !important;
@@ -361,6 +350,7 @@ main {
 }
 .section-intro-wrap {
   grid-column: 3 / -2;
+  grid-row: 1;
 
   display: flex;
   flex-direction: column;
@@ -370,13 +360,13 @@ main {
   top: 8.1rem;
 }
 .section-heading {
-  margin: 0px;
-  padding: 0;
+  margin: 0;
   font-family: var(--font-san-serif);
   font-weight: 500;
   font-size: 2rem;
 
   grid-column: 1 / span 3;
+  grid-row: 2 / span 3;
   margin: 0;
 }
 .hero-img-wrapper {
@@ -458,14 +448,14 @@ span.bound {
   margin-bottom: 43rem !important;
 }
 .line {
-  grid-column: 1 /-1;
+  grid-column: 1 / -1;
+  grid-row: 1 / 1;
   border-top: 1px solid var(--black);
-  padding: 0;
-  margin: 0;
 }
 .section-heading-container {
   display: block;
   grid-column: 1 / span 3;
+  grid-row: 2;
   margin: 0;
 }
 a.grap {
@@ -476,6 +466,8 @@ a.grap {
 
   padding:0;
   margin: 0;
+  grid-column: 4 / -1;
+  grid-row: 2 ;
 }
 .article-direction-x {
   transform: translateX(0%);
@@ -486,6 +478,7 @@ a.grap {
   height: auto;
 
   position: absolute;
+  top: -4.4rem;
   left: 0;
 }
 .article_img {
@@ -575,7 +568,29 @@ a.grap {
   margin-bottom: 6rem;
   margin-top: 30rem;
 }
-.section-intro-wrapper {
-  grid-column: 4 / 9;
+.section-heading__visit {
+  grid-column: 1 / span 3;
+  grid-row: 2;
   display: block;
+}
+.section-intro-wrapper {
+  grid-column: 4 / span 5;
+  grid-row: 2;
+  display: block;
+}
+.section-intro_text, .section-heading__visit {
+  margin-top: 0;
+  padding-top: 0;
+}
+.article-colume {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+.article_wrapper {
+  grid-row: 3;
+  grid-column: 4 / -1;
+  gap: 2rem;
+  display: flex;
+  
 }
