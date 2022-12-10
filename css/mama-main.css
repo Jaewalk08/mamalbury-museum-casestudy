@@ -318,14 +318,14 @@
 /* main starts here ----------------*/
 
 /* --------------- hero  -------------------*/
-div.full-blanke-wrapper {  /* top div above main : full cover main + footer  BUT no header*/
+div.full-blanke-wrapper {  /* color setup for full??? : full cover main + footer  BUT no header*/
   height: 100vh;
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 0;
 }
-main {
+.full-sheet-wrapper { /* basic position setup  : full cover main + footer  BUT no header*/
   display: block;
   flex-grow: 1;
   flex-shrink: 1;
@@ -335,6 +335,9 @@ main {
   
   outline: none;
 }
+/* ------------------------------------------*/
+
+/*------- main ------------------------------*/
 .section-full-grid { /* cover each section in same grid */
   display: grid;
   grid-gap: 2rem;
@@ -638,7 +641,7 @@ a.grap {
   grid-template-rows: repeat(autofit, minmax(0px, 1fr));
   
   padding-top: 11.9rem;
-  margin-bottom: 13rem !important;
+  margin-bottom: 0 !important; 
   margin-top: 0;
   padding-left: 9rem;
   padding-right: 2rem;
@@ -686,11 +689,14 @@ a.grap {
 }
 .section-intro_text__member {
   color: var(--white);
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+.action-wrapper {
+  padding-bottom: 1.5rem;
 }
 /* Footer starts here ---------------------- */
 /* .z-index-black-background {} ------*/
-
  .footer-full-grid {
   display: grid;
   grid-gap: 2rem;
@@ -698,21 +704,111 @@ a.grap {
   grid-template-columns: repeat(12, minmax(0px, 1fr));
   grid-template-rows: repeat(autofit, minmax(0px, 1fr));
   
-  padding-top: 0 !important;
-  margin-bottom: 0 !important;
+  padding-top: 0;
+  margin-bottom: 0;
   margin-top: 0;
   padding-left: 9rem;
   padding-right: 2rem;
   position: relative;
+  z-index: 2;
 
   color: var(--white);
   background-color: var(--black);
 }
-.we_are_mama {
+h4 {
   font-family: var(--font-san-serif);
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bolder;
+  color: hotpink;
+  text-align: left;
 
-  grid-column: 1 / ;
+  grid-column: 1 / -1 ;
 }
+.footer_nav-position {
+  display: block;
+}
+.footer-nav__title {
+  font-family: var(--font-san-serif);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.footer-nav__content {
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.line-footer {
+  grid-column: 1 / -1;
+  grid-row: 2 / span 1;
+}
+.footer-group-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.footer-group-container__right-top {
+  justify-content: space-between;
 
+  grid-column: 6 / -2;
+  grid-row: 3 / span 1;
+
+  padding-top: 2rem;
+}
+.footer-group-container__right-2nd {
+  justify-content: space-between;
+  align-items: flex-start;
+
+  grid-column: 6 / -3;
+  grid-row: 4 / span 1;
+}
+.footer-list__title {
+  font-size: 0.9rem;
+  color: var(--white);
+  margin-top: 0;
+}
+.footer-group-container__left {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  grid-column: 1 / 6;
+  grid-row: 3 / span 2;
+
+  padding-right: 1.3rem;
+  padding-top: 2rem;
+}
+.join {
+  padding: 0.9rem;
+  font-weight: 500;
+  color: var(--white);
+  font-size: 0.7rem;
+  text-align: left;
+}
+.footer-submit-button {
+  
+  background-color: none;
+}
+/*
+.footer_nav-position__partner-our {
+  grid-column: 6 / -1;
+  grid-row: 4 / span 1;
+  border-bottom: 1px solid var(--white);
+}
+.partners-logo-container {
+  grid-column: 6 / span 2;
+  grid-row: 5 / span 1;
+
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  width: 100%;
+}
+.partner {
+  display: block;
+  width: 100%;
+}
+.footer_nav-position__copyrights {
+  grid-column: 1 / -1;
+  grid-row: 6/ span 1;
+}
+*/

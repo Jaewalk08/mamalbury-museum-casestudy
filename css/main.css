@@ -75,10 +75,6 @@ ul, li, dl, dt, dd {
 .link-button__join-us {
   color: var(--white);
 }
-.subscription_join {
-  border-bottom: 1.2px solid var(--white);
-  padding: 0.8rem;
-}
 .container__circle-explore {
   display: flex;
   flex-direction: column;
