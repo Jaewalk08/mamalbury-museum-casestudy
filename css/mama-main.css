@@ -19,7 +19,7 @@
 
     /*color */
     --black: #000;
-    --background: #ffffff;
+    --white: #ffffff;
     --gray-scale: #66666676;
     --gray-scale-0: rgba(124, 124, 124, 0);
 
@@ -128,7 +128,7 @@
   width: 53.5%;
   height: 100%;
   z-index: 4;
-  background-color: var(--background);
+  background-color: var(--white);
 }
 .slideout-background-100 { /* background color 100% gray scale : slide out window */
   position: absolute;
@@ -180,7 +180,7 @@
 
   width: 100%;
   height: 5rem;
-  background-color: var(--background);
+  background-color: var(--white);
 }
 .nav-top-wrapper {
   position: fixed;
@@ -556,18 +556,14 @@ a.grap {
   transform-origin: left;
   transition: transform 200ms ease-in;
 }
-.action-link:hover::after {
+.action-link__other:hover::after {
   transform: scaleX(1);
 }
 /*--------------------------*/
-.action-wrapper {
-  color: var(--white);
-}
 .action-link__other {
   font-weight: 500;
   font-size: 0.87rem;
   position: relative;
-  color: var(--white);
 }
 .action-link__other a {
   text-decoration: none;
@@ -582,7 +578,7 @@ a.grap {
   bottom: -3px;
   width: 100%;
   height: 1px;
-  background: transparent;
+  background: currentColor;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 200ms ease-in;
@@ -635,10 +631,20 @@ a.grap {
 }
 /* section : MAMA member --------*/
 .section-full-grid__member {
-  position: relative;
+  display: grid;
+  grid-gap: 2rem;
+  gap: 2rem;
+  grid-template-columns: repeat(12, minmax(0px, 1fr));
+  grid-template-rows: repeat(autofit, minmax(0px, 1fr));
+  
+  padding-top: 11.9rem;
+  margin-bottom: 13rem !important;
   margin-top: 0;
-  padding-top: 0;
-  display: block;
+  padding-left: 9rem;
+  padding-right: 2rem;
+  position: relative;
+
+  color: var(--white);
 }
 .section-full-img {
   position: absolute;
@@ -649,17 +655,64 @@ a.grap {
   display: block;
   width: 100%;
   height: auto;
-  margin: 0 0 6rem;
+  margin: 0;
+  padding: 0;
 }
 .mama-member-img {
   display: block;
   width: 100%;
 }
-.section-intro-wrapper {
+.section-intro-wrapper__member {
   display: block;
   z-index: 2;
-  
-  grid-column: 8 / span 4;
-  grid-row: 2;
 
+  grid-column: 8 / -2;
+  grid-row: 4;
 }
+.section-intro-wrapper {
+  font-family: var(--font-san-serif);
+}
+.section-heading-container {
+  border-top: 1px solid var(--white);
+  border-bottom: 1px solid var(--white);
+  padding: 1.5rem 0 8rem;
+  margin: 0.5rem 0 1.5rem;
+}
+.section-heading__member {
+  display: block;
+  color: var(--white);
+  font-size: 1.8rem;
+  line-height: 1;
+}
+.section-intro_text__member {
+  color: var(--white);
+  margin-bottom: 2rem;
+}
+/* Footer starts here ---------------------- */
+/* .z-index-black-background {} ------*/
+
+ .footer-full-grid {
+  display: grid;
+  grid-gap: 2rem;
+  gap: 2rem;
+  grid-template-columns: repeat(12, minmax(0px, 1fr));
+  grid-template-rows: repeat(autofit, minmax(0px, 1fr));
+  
+  padding-top: 0 !important;
+  margin-bottom: 0 !important;
+  margin-top: 0;
+  padding-left: 9rem;
+  padding-right: 2rem;
+  position: relative;
+
+  color: var(--white);
+  background-color: var(--black);
+}
+.we_are_mama {
+  font-family: var(--font-san-serif);
+  font-size: 3rem;
+  font-weight: bolder;
+
+  grid-column: 1 / ;
+}
+
