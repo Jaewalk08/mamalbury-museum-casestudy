@@ -88,7 +88,7 @@
 /*---------------------------------------*/
   }
 /* header starts here */
-section, div > * {
+section> * {
   border: 1px solid red;
 }
 .nav-top-container {
@@ -338,7 +338,7 @@ main {
   position: initial !important;
   width: 100%;
   height: 100vh;
-  overflow: hidden;
+  
   outline: none;
 }
 .section-full-grid { /* cover each section in same grid */
@@ -348,26 +348,14 @@ main {
   grid-gap: 32px;
   gap: 32px;
   grid-template-columns: repeat(12, minmax(0px, 1fr));
-
+  grid-template-rows: repeat(1fr);
   
-  padding-top: 12rem;
+  padding-top: 11.9rem;
   margin-bottom: 13rem !important;
   padding-left: 9rem;
   padding-right: 32px;
 
-  overflow: hidden;
   position: relative;
-}
-
-.bound, .typo-bound {
-  display: block;
-  position: absolute;
-  top: 79px;
-  left: 0px;
-  width: 100vw;
-  height: auto;
-  pointer-events: none;
-  z-index: 2;
 }
 .section-intro-wrap {
   grid-column: 3 / -2;
@@ -375,19 +363,111 @@ main {
   display: flex;
   flex-direction: column;
   margin-top: -25px;
-  margin-bottom: 26px;
+  margin-bottom: 1.8rem;
+
+  top: 8.1rem;
 }
 .section-heading {
   margin: 0px;
   height: 15px;
   margin-bottom: 10px;
+  padding: 0;
+
+  font-size: 0.8rem;
+  text-align: right;
 }
 .hero-img-wrapper {
-  display: block;
+  border-bottom: 1px solid var(--foreground);
+}
+.hero-img-wrapper, .article-imgs__hero {
   grid-column: 3 / -2;
+  display: block;
+  width: 100%;
+  height: auto;
+  padding-bottom: 32px;
+  margin: 0;
 }
-.section-intro-wrap__hero {
+.section-heading__hero {
+  font-weight: bolder;
+}
+.event-description {
+  border-top: 1px solid var(--foreground);
+  line-height: .4;
+}
+.description-wrapper {
+  grid-column: 9 / -2;
+  font-size: 0.9rem;
+  text-align: left;
+  line-height: .4;
+}
+.description__title {
+  font-size: 0.9rem;
+}
 
+/* bound only */
+.bound, .typo-bound {
+  width: 100vw;
+  height: auto;
+  pointer-events: none;
+  z-index: 2;
+}
+.bound {
+  display: block;
+  position: absolute;
+  top: 79px;
+  left: 0px;
+
+  -ms-transform: translate(0, -65%);
+  transform: translate(0, -65%);
+}
+.bound-container {
+  display: block;
+  position: absolute;
+  top: 150px;
+  left: 0px;
+
+  width: 100vw;
+  height: 0;
+
+  opacity: 1;
+  transition: 0.65s ease;
+}
+.hero-img-wrapper:hover, .bound-container:hover {
+  height: 100%;
 }
 
 
+.typo-bound {
+  display: block;
+  width: 200%;
+  height: auto;
+}
+.typo {
+  position: absolute;
+  top: 90%;
+  left: 45%;
+  -ms-transform: translate(-97%, -65%);
+  transform: translate(-97%, -65%);
+}
+span.typo {
+  display: block;
+}
+.container_typo-hero {
+  position: absolute;
+  bottom: 45%;
+  left: 0;
+  width: 100%;
+  height: 0;
+  opacity: 1;
+  transition: 0.65s ease;
+}
+.container_hero:hover .container_typo-hero {
+  height: 100%;
+}
+
+/* section What's On ------------------------*/
+
+
+div {
+  border: 0.5px solid red;
+}
