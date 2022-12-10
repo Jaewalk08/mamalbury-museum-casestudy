@@ -448,19 +448,46 @@ span.bound {
 a.grap {
   cursor: grap;
 }
-.article_wrapper {
+.artilc_wrapper {
   display: block;
-  overflow: hidden;
-
   grid-column: 4 / -1;
-  margin-right: 32px;
+}
+.article-direction-x {
+  transform: translateX(0%);
+}
+.setup-margin {
+  display: block;
+  width: 100%;
+  height: auto;
+  left: 0px;
 }
 article.img-flex-colume {
-  display: block;
-  width: 60%;
-  height: auto;
-}
+  display: flex;
+  margin-right: 32px;
 
+  position: absolute;
+  left: 0px;
+}
+.article_img {
+  display: block;
+  width: 100%;
+}
+/* article-order */
+.article-order__1 {
+  transform: translateX(0%);
+}
+.article-order__2 {
+  transform: translateX(200%);
+}
+.article-order__3 {
+  transform: translateX(402%);
+}
+.article-order__4 {
+  transform: translateX(804%);
+}
+.article-order__5 {
+  transform: translateX(1608%);
+}
 
 div {
   border: 0.5px solid red;
