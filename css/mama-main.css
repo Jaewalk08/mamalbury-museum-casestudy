@@ -73,7 +73,7 @@
   }
   
 /* -----------------------top nav & slide out set-ups ----------------------*/
-  .mama-logo {
+  .mama-logo, .mama-logo-white {
     display: block; 
     width: 3.3rem;
     position: fixed;
@@ -87,12 +87,15 @@
     color: var(--black);
 /*---------------------------------------*/
   }
+ 
 /* header starts here */
 .nav-top-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+
+
 }
 /* slide out : settings | slide out only contents */ 
 .sidenav {
@@ -221,7 +224,7 @@
 .nav-list-link:hover::after {
   transform: scaleX(1);
 }
-*/
+
 .fa-solid {
   padding-right: 0.5rem;
 }
@@ -240,7 +243,7 @@
   font-weight: 400;
   cursor: pointer;
   background-color: transparent;
-  color: var(--black);
+  color: var(--black); 
 }
 .nav-list:last-child {
   padding-right: 0rem;
@@ -271,10 +274,10 @@
   transform: scaleX(1);
 }
 .nav-top-list {  /* margin between ** top nav list and contents indivisully */
-  margin-bottom: 8.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .topping {
   opacity: 1;
@@ -284,7 +287,11 @@
   background-color: none;
   z-index: 16;
 }
-/* nav contents child of NAV LIST */
+.nav-contents {
+  display: none;
+}
+/*--------------------------?---------
+/* nav contents child of NAV LIST ----
 .slideout-list {
   font-family: var(--font-san-serif);
   font-size: 1rem;
@@ -297,6 +304,7 @@
   opacity: 1;
   transition: 2s;
 }
+
 .slideout-list-container {
   display: block;
   border-top: 1px solid var(--black);
@@ -306,15 +314,19 @@
   left: 0;
   z-index: 17;
 }
-/*
+.nav-contents {
+  color: var(--black);
+  background-color: transparent;
+}
+
 #whatsOn, #Visit, #Explore, #Classes, #Support, #About {
   display: none;
 }
 #whatsOn:target, #Visit:target, #Explore:target, #Classes:target, #Support:target, #About:target {
   display: block;
-  color: var(--black);
   transition: 3s;
-} */
+} 
+*/
 
 /* main starts here ----------------*/
 
@@ -496,7 +508,7 @@ a.grap {
 /* article-order */
 .article-order {
   position: absolute;
-  top: -13.5rem;
+  top: -13rem;
   left: 0;
   display: block;
   margin: 0 2rem 0 0;
@@ -720,7 +732,7 @@ a.grap {
   padding-right: 2rem;
   position: relative;
 
-  z-index: 0;   /* <<<<<<<<<<<<<<<<<<<<<<< treak?? */
+  z-index: 21;   /* <<<<<<<<<<<<<<<<<<<<<<< treak?? */
 
   color: var(--white);
   background-color: var(--black);
