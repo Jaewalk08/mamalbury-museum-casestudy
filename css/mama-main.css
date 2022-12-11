@@ -196,7 +196,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: top;
+  align-items: flex-start;
 }
 .nav-list:last-child {
   padding-right: 0;
@@ -284,7 +284,7 @@
   width: 4rem;
   position: absolute;
   color: rgb(255, 255, 255);
-  background-color: none;
+  background-color: transparent;
   z-index: 16;
 }
 .nav-contents {
@@ -356,7 +356,7 @@ div.full-blanke-wrapper {  /* color setup for full??? : full cover main + footer
   grid-gap: 2rem;
   gap: 2rem;
   grid-template-columns: repeat(12, minmax(0px, 1fr));
-  grid-template-rows: repeat(autofit, minmax(0px, 1fr));
+  grid-template-rows: repeat(auto-fill, 1fr);
   
   padding-top: 11.9rem;
   margin-bottom: 13rem !important;
@@ -656,7 +656,7 @@ a.grap {
   grid-gap: 2rem;
   gap: 2rem;
   grid-template-columns: repeat(12, minmax(0px, 1fr));
-  grid-template-rows: repeat(autofit, minmax(0px, 1fr));
+  grid-template-rows: repeat(auto-fill, 1fr);
   
   padding-top: 11.9rem;
   margin-bottom: 0 !important; 
@@ -723,7 +723,7 @@ a.grap {
   grid-gap: 2rem;
   gap: 2rem;
   grid-template-columns: repeat(12, minmax(0px, 1fr));
-  grid-template-rows: repeat(autofit, minmax(0px, 1fr));
+  grid-template-rows: repeat(auto-fill, 1fr);
   
   padding-top: 0;
   margin-bottom: 0;
@@ -819,8 +819,6 @@ dl.opening-line--footer {
 .opening_date--footer, .opening_time--footer {
   padding: 0 1.8rem 0 0;
   display: inline-block;
-
-  font-weight: 0.9rem;
 }
 /* each group position setting */
 .footer-group-container__left {
@@ -880,6 +878,8 @@ dl.opening-line--footer {
   display: block;
   grid-column: 9 / span 2;
   grid-row: 4 / span 1;
+  
+  font-family: var(--font-san-serif);
 
   padding-top: 0;
   margin-top: 0;
