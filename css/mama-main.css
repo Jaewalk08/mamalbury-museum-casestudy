@@ -306,6 +306,7 @@
   left: 0;
   z-index: 17;
 }
+/*
 #whatsOn, #Visit, #Explore, #Classes, #Support, #About {
   display: none;
 }
@@ -313,7 +314,7 @@
   display: block;
   color: var(--black);
   transition: 3s;
-}
+} */
 
 /* main starts here ----------------*/
 
@@ -372,6 +373,11 @@ div.full-blanke-wrapper {  /* color setup for full??? : full cover main + footer
   grid-column: 1 / span 3;
   grid-row: 2 / span 3;
   margin: 0;
+
+  display: block;
+  position: absolute;
+  top: -0.8rem;
+  left: 0;
 }
 .hero-img-wrapper {
   border-bottom: 1px solid var(--black);
@@ -449,7 +455,7 @@ span.bound {
 /* section What's On ------------------------*/
 .section-full-grid__whats-on {
   padding-top: 0;
-  margin-bottom: 43rem !important;
+  margin-bottom: 6rem !important;
 }
 .line {
   grid-column: 1 / -1;
@@ -463,7 +469,7 @@ span.bound {
   margin: 0;
 }
 a.grap {
-  cursor: grap;
+  cursor: url(cursor_2.png) 2 2, pointer;
 }
 .article_wrapper {
   display: block;
@@ -481,9 +487,7 @@ a.grap {
   width: 35rem;
   height: auto;
 
-  position: absolute;
-  top: -4.4rem;
-  left: 0;
+  top: -13.5rem;
 }
 .article_img {
   display: block;
@@ -492,6 +496,7 @@ a.grap {
 /* article-order */
 .article-order {
   position: absolute;
+  top: -13.5rem;
   left: 0;
   display: block;
   margin: 0 2rem 0 0;
@@ -521,6 +526,7 @@ a.grap {
 }
 .article-order__8 {
   transform: translateX(741%);
+  padding-right: 13em;
 }
 .description {
   font-size: 0.9rem;
@@ -682,9 +688,12 @@ a.grap {
   margin: 0.5rem 0 1.5rem;
 }
 .section-heading__member {
+  margin: 0;
+  font-family: var(--font-san-serif);
+  font-weight: 500;
   display: block;
   color: var(--white);
-  font-size: 1.8rem;
+  font-size: 2rem;
   line-height: 1;
 }
 .section-intro_text__member {
@@ -697,7 +706,6 @@ a.grap {
 }
 
 /* Footer starts here ---------------------- */
-/* .z-index-black-background {} ------*/
  .footer-full-grid {
   display: grid;
   grid-gap: 2rem;
@@ -731,6 +739,8 @@ h4 {
 }
 .footer_nav-position {
   display: block;
+  margin-top: 0;
+  align-items: start;
 }
 .line-footer {
   grid-column: 2 / -1;
@@ -745,36 +755,60 @@ h4 {
   font-family: var(--font-san-serif);
   font-size: 0.9rem;
   font-weight: 500;
+  line-height: 2;
 }
 .footer-nav__content {
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.5;
 }
+.footer-submit-intro {
+  padding-top: 4rem;
+}
+.footer-titles {
+  color: var(--white);
+  font-size: 0.9rem;
+  padding-bottom: 0;
+  margin: 0;
+}
+.description-text__footer {
+  padding: 0;
+  margin: 0;
+  width: 20rem;
+}
+.footer-submit-button {
+  border-bottom: 1px solid var(--white);
+  padding-bottom: 0.2rem;
+  padding-top: 1.5rem;
+  width: 18rem;
+}
 .join-submit {
   font-size: 0.8rem;
   color: var(--white);
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid var(--white);
 
-  width: 20rem;
-}
-.description-text__footer {
-  width: 20rem;
+  width: 16rem;
 }
 dl.opening-line--footer {
   margin-top: 0;
   margin-bottom: 0;
 }
+.opening-title--footer {
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 2;
+  padding-top: 0;
+  margin-top: 0;
+}
 .opening_date--footer {
   font-weight: 500;
 }
 .opening_date--footer, .opening_time--footer {
-
+  padding: 0 1.8rem 0 0;
   display: inline-block;
 
-  line-height: 1;
+  font-weight: 0.9rem;
 }
 /* each group position setting */
 .footer-group-container__left {
@@ -800,27 +834,51 @@ dl.opening-line--footer {
   display: block;
   grid-column: 9 / span 1;
   grid-row: 3 / span 1;
+
+  padding-top: 0;
+  margin-top: -0.8rem;
 }
 .footer_nav-position__follow {
   display: block;
   grid-column: 11 / span 1;
   grid-row: 3 / span 1;
+
+  padding-top: 0;
+  margin-top: -0.8rem;
 }
 .footer_nav-position__opening {
   display: block;
   grid-column: 7 / span 2;
   grid-row: 4 / span 2;
+
+  padding: 0;
+  margin: 0;
+}
+.footer-list__title {
+  font-family: var(--font-san-serif);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--white);
+  line-height: 2;
+
+  padding: 0;
+  margin: 0;
 }
 .footer_nav-position__address {
   display: block;
   grid-column: 9 / span 2;
   grid-row: 4 / span 1;
+
+  padding-top: 0;
+  margin-top: 0;
 }
 /* partner logo */
 .partner-heading-container {
   grid-column: 7 / -1;
   grid-row: 6 / span 1;
   border-bottom: 1px solid var(--white);
+
+  font-weight: 500;
 }
 
 .partner-logo--alburycity {
@@ -841,7 +899,6 @@ dl.opening-line--footer {
   width: 100%;
 }
 /*---------------------------------------------*/
-
 
 /* copyrights */
 .line-footer--copyright {
@@ -882,6 +939,7 @@ dl.opening-line--footer {
 .footer-etc-infore, .copyright, .copyright-flex--right {
   font-size: 0.7rem;
 }
-
-
+/* X-tramas!! * \(^o^)/ 8 * 8 * 8 ho! ho! ho!    */
+/*/\ * / 8 \ / * \/ 8 \ * / 8 \/ * / 8 \ * / 8 \ / * \ 
+/ 8 \ * / \ 8 /\ * / 8 \ * /\ 8 \ * / 8 \ / * \ 8 /*/
 

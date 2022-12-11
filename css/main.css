@@ -166,7 +166,7 @@ cursor coding
 .article-container {
   display: flex;
   flex-direction: column;
-  width: 320px;   /* <<<<<<< ----   this needs to change or remove */
+  width: 320px;   /* <<<<<<< ----   this needs to change or remove later */
   padding-top: 2.2rem;
 }
 .img-container_zoom {
