@@ -80,7 +80,7 @@
     top: 12rem;
     margin-left: -0.1rem;
 
-    z-index: 10;
+    z-index: 20;
 /*--------------------------------------*/
     visibility: inherit;
     fill: none;
@@ -99,7 +99,7 @@
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 4;
+  z-index: 15;
   top: 0;
   left: 0;
   overflow-x: hidden;
@@ -111,7 +111,7 @@
 
   position: absolute;
   top: 0;
-  z-index: 2;
+  z-index: 12;
 }
 .search-close .closebtn {
   position: absolute;
@@ -127,7 +127,7 @@
   left: 0;
   width: 53.5%;
   height: 100%;
-  z-index: 4;
+  z-index: 14;
   background-color: var(--white);
 }
 .slideout-background-100 { /* background color 100% gray scale : slide out window */
@@ -137,19 +137,19 @@
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 2;
+  z-index: 12;
   background-color: rgba(96, 96, 96, 0.357);
   transition: 1s ease-in;
 }
 .slideout_opening_container { /* --  opening hours texts  ---*/
   display: block;
   position: absolute;
-  z-index: 5;
+  z-index: 15;
   bottom: 2rem;
   left: 13rem;
   width: 35%;
 }
-.top-opening {
+.opening, .opening-top {
   text-align: left;
   border-top: 1px solid var(--black);
 
@@ -158,13 +158,13 @@
   margin: 0;
   padding: 0;
 }
-.slideout_opening-title {
+.opening-title {
   text-align: left;
   font-size: 0.8rem;
   font-weight: 500;
   padding: 0.3rem 0;
 }
-.slideout_opening {
+.opening {
   text-align: left;
   font-weight: 400;
   font-size: 0.8rem;
@@ -176,7 +176,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 1;          /* <<<<< haha! treak you  >>>>> */
 
   width: 100%;
   height: 5rem;
@@ -186,7 +186,7 @@
   position: fixed;
   top: 0rem;
   left: 14rem;
-  z-index: 5;
+  z-index: 15;
   padding: 1.1rem 0 1.1rem;
   margin: 0;
 
@@ -229,7 +229,7 @@
   position: fixed;
   top: 1.9rem;
   right: 10rem;
-  z-index: 2;
+  z-index: 12;
   padding: 1.1rem 0 1.1rem;
   margin: 0;
 }
@@ -282,7 +282,7 @@
   position: absolute;
   color: rgb(255, 255, 255);
   background-color: none;
-  z-index: 6;
+  z-index: 16;
 }
 /* nav contents child of NAV LIST */
 .slideout-list {
@@ -304,7 +304,7 @@
   position: absolute;
   top: 8.2rem;
   left: 0;
-  z-index: 7;
+  z-index: 17;
 }
 #whatsOn, #Visit, #Explore, #Classes, #Support, #About {
   display: none;
@@ -695,6 +695,7 @@ a.grap {
 .action-wrapper {
   padding-bottom: 1.5rem;
 }
+
 /* Footer starts here ---------------------- */
 /* .z-index-black-background {} ------*/
  .footer-full-grid {
@@ -710,22 +711,34 @@ a.grap {
   padding-left: 9rem;
   padding-right: 2rem;
   position: relative;
-  z-index: 2;
+
+  z-index: 2;   /* <<<<<<<<<<<<<<<<<<<<<<< treak?? */
 
   color: var(--white);
   background-color: var(--black);
 }
+.we_are_mama {
+  grid-column: 2 / -1 ;
+  display: block;
+}
 h4 {
   font-family: var(--font-san-serif);
-  font-size: 2rem;
-  font-weight: bolder;
-  color: hotpink;
+  font-size: 4rem;
+  font-weight: 500;
+  color: var(--white);
   text-align: left;
-
-  grid-column: 1 / -1 ;
 }
 .footer_nav-position {
   display: block;
+}
+.line-footer {
+  grid-column: 2 / -1;
+  grid-row: 2 / span 1;
+  display: block;
+  border-top: 1px solid var(--white);
+  margin-top: 5rem;
+  margin-bottom: 0;
+  padding: 0;
 }
 .footer-nav__title {
   font-family: var(--font-san-serif);
@@ -737,78 +750,105 @@ h4 {
   font-weight: 400;
   line-height: 1.5;
 }
-.line-footer {
-  grid-column: 1 / -1;
-  grid-row: 2 / span 1;
-}
-.footer-group-container {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-}
-.footer-group-container__right-top {
-  justify-content: space-between;
-
-  grid-column: 6 / -2;
-  grid-row: 3 / span 1;
-
-  padding-top: 2rem;
-}
-.footer-group-container__right-2nd {
-  justify-content: space-between;
-  align-items: flex-start;
-
-  grid-column: 6 / -3;
-  grid-row: 4 / span 1;
-}
-.footer-list__title {
-  font-size: 0.9rem;
+.join-submit {
+  font-size: 0.8rem;
   color: var(--white);
-  margin-top: 0;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--white);
+
+  width: 20rem;
 }
+.description-text__footer {
+  width: 20rem;
+}
+.opening_date--footer {
+  font-weight: 500;
+}
+.opening_date--footer, .opening_time--footer {
+  padding: 0 1rem 0 0;
+  margin: 0;
+  display: inline-block;
+}
+/* each group position setting */
 .footer-group-container__left {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 
-  grid-column: 1 / 6;
+  grid-column: 2 / 6;
   grid-row: 3 / span 2;
 
   padding-right: 1.3rem;
-  padding-top: 2rem;
+  padding-top: 0;
+  margin-top: 0;
 }
-.join {
-  padding: 0.9rem;
-  font-weight: 500;
-  color: var(--white);
-  font-size: 0.7rem;
-  text-align: left;
+/* ----------------------------*/
+.footer_nav-position__about {
+  display: block;
+  grid-column: 7 / span 1;
+  grid-row: 3 / span 1;
 }
-.footer-submit-button {
-  
-  background-color: none;
+.footer_nav-position__support {
+  display: block;
+  grid-column: 9 / span 1;
+  grid-row: 3 / span 1;
 }
-/*
-.footer_nav-position__partner-our {
-  grid-column: 6 / -1;
+.footer_nav-position__follow {
+  display: block;
+  grid-column: 11 / span 1;
+  grid-row: 3 / span 1;
+}
+.footer_nav-position__opening {
+  display: block;
+  grid-column: 7 / span 2;
+  grid-row: 4 / span 2;
+}
+.footer_nav-position__address {
+  display: block;
+  grid-column: 9 / span 2;
   grid-row: 4 / span 1;
+}
+/* partner logo */
+.partner-heading-container {
+  grid-column: 7 / -1;
+  grid-row: 6 / span 1;
   border-bottom: 1px solid var(--white);
 }
-.partners-logo-container {
-  grid-column: 6 / span 2;
-  grid-row: 5 / span 1;
 
-  display: flex;
-  flex-direction: row;
-  gap: 1.5rem;
-  width: 100%;
+.partner-logo--alburycity {
+  grid-column: 7 / span 1;
+  grid-row: 7 / span 1;
+}
+.partner-logo--nsw {
+  grid-column: 8 / span 1;
+  grid-row: 7 / span 1;
+  width: 80%;
+}
+.partner-logo {
+  display: block;
 }
 .partner {
   display: block;
   width: 100%;
 }
+/*---------------------------------------------*/
+
+
+/* copyrights */
 .footer_nav-position__copyrights {
+  display: block;
+
   grid-column: 1 / -1;
-  grid-row: 6/ span 1;
+  grid-row: 8 / span 1;
 }
-*/
+.copyright-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 1rem;
+}
+
+
+
+
