@@ -30,8 +30,6 @@
     --dark-brown: #2B1214;
     --gray: #757575;
     --olive-green: #5A682E;
-    /*component colors*/
-    --dark-gray: rgb(67, 63, 63);
   }
 /* apply a natural box layout model to all elements, but allowing components to change */
   html {
@@ -292,6 +290,7 @@
 }
 /*--------------------------?---------
 /* nav contents child of NAV LIST ----
+
 .slideout-list {
   font-family: var(--font-san-serif);
   font-size: 1rem;
@@ -304,7 +303,6 @@
   opacity: 1;
   transition: 2s;
 }
-
 .slideout-list-container {
   display: block;
   border-top: 1px solid var(--black);
@@ -331,14 +329,7 @@
 /* main starts here ----------------*/
 
 /* --------------- hero  -------------------*/
-div.full-blanke-wrapper {  /* color setup for full??? : full cover main + footer  BUT no header*/
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-}
-.full-sheet-wrapper { /* basic position setup  : full cover main + footer  BUT no header*/
+.full-blanket-wrapper { /* basic position setup  : full cover main + footer  BUT no header*/
   display: block;
   flex-grow: 1;
   flex-shrink: 1;
@@ -878,7 +869,7 @@ dl.opening-line--footer {
   display: block;
   grid-column: 9 / span 2;
   grid-row: 4 / span 1;
-  
+
   font-family: var(--font-san-serif);
 
   padding-top: 0;
@@ -892,7 +883,6 @@ dl.opening-line--footer {
 
   font-weight: 500;
 }
-
 .partner-logo--alburycity {
   grid-column: 7 / span 1;
   grid-row: 7 / span 1;
