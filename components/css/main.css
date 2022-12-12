@@ -1,4 +1,17 @@
-
+@font-face {
+  font-family: 'test untitled sans';
+  src: url(test-untitled-sans-medium.woff2);
+  src: url(test-untitled-sans-regular.woff2);
+}
+@font-face {
+  font-family: 'test untitled serif';
+  src: url(test-untitled-serif-medium.woff2);
+  src: url(test-untitled-serif-regular.woff2);
+}
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 0;}
+.sidenav a {font-size: 12px;}
+}
 :root {
   --font-san-serif: 'Yantramanav', sans-serif;
   --font-serif-sub: 'EB Garamond', serif;
@@ -285,7 +298,7 @@ slideout Navigation table
   display: block;
   position: absolute;
   top: 33rem; /*24.8rem;*/
-  left: 13rem;
+  left: 15rem;
 
   font-size: 0.8rem;
   font-weight: 400;
@@ -1089,10 +1102,10 @@ a.grap {
   position: absolute;
   left: 0;
   top: 0;
-  z-index: -1;
+  z-index: 0;
 
   display: block;
-  width: 100%;
+  width: 90%;
   height: auto;
   margin: 0;
   padding: 0;
@@ -1107,6 +1120,9 @@ a.grap {
 
   grid-column: 8 / -2;
   grid-row: 4;
+
+  margin-top: 7rem;
+  margin-right: 10rem;
 }
 .section-heading-container {
   border-top: 1px solid var(--white);
@@ -1122,6 +1138,8 @@ a.grap {
   color: var(--white);
   font-size: 2rem;
   line-height: 1;
+
+  padding-bottom: 5rem;
 }
 .section-intro_text__member {
   color: var(--white);
@@ -1154,7 +1172,7 @@ a.grap {
   margin-top: 3rem;
 }
 .component-margin-patch {
-  margin-left: -5rem;
+  margin-left: -8rem;
 }
 /* Footer starts here ---------------------- */
 .footer-full-grid {
@@ -1170,9 +1188,6 @@ a.grap {
   padding-left: 7.8rem;
   padding-right: 2rem;
   position: relative;
-
-  z-index: 21;   /* <<<<<<<<<<<<<<<<<<<<<<< treak?? */
-
   color: var(--white);
   background-color: var(--black);
 }
@@ -1181,7 +1196,7 @@ a.grap {
   display: block;
   padding-top: 4.2rem;
 }
-h4 {
+.we-are-m {
   font-family: var(--font-san-serif);
   font-size: 4.3rem;
   font-weight: 500;
@@ -1229,7 +1244,7 @@ h4 {
 }
 .footer-submit-button {
   border-bottom: 1px solid var(--white);
-  padding-bottom: 0.2rem;
+  padding-bottom: 0;
   padding-top: 1.5rem;
   width: 18rem;
 }
@@ -1239,7 +1254,7 @@ h4 {
   background-color: transparent;
   border: none;
 
-  width: 16rem;
+  width: 13rem;
 }
 dl.opening-line--footer {
   margin-top: 0;
@@ -1348,6 +1363,45 @@ dl.opening-line--footer {
   display: block;
   width: 100%;
 }
+/* copyrights */
+.line-footer--copyright {
+  grid-column: 1 / -1;
+  grid-row: 8 / span 1;
+
+  display: block;
+  border-top: 1px solid var(--white);
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  padding: 0;
+}
+.copyright-flex--left {
+  display: block;
+  padding-bottom: 1rem;
+  padding-top: 0;
+
+  grid-column: 1 / span 2;
+  grid-row: 9 / span 1;
+}
+.copyright {
+  margin-top: -0.02rem;
+  padding-bottom: 1rem;
+}
+.copyright-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 1rem;
+}
+.copyright-flex--right {
+  margin-top: 0rem;
+  padding-bottom: 1rem;
+
+  grid-column: 7 / -2;
+  grid-row: 9 / span 1;
+}
+.footer-etc-infore, .copyright, .copyright-flex--right {
+  font-size: 0.7rem;
+}
 /***
 _____screen shot images adjustments only_____
 **/
@@ -1429,6 +1483,12 @@ _____screen shot images adjustments only_____
   width: 72%;
 }
 .screen_shot_imgs__whats-on {
-  diplay: block;
+  display: block;
+  width: 90%;
+}
+.screen_shot_imgs__support {
+  width: 90%;
+}
+.screen_shot_imgs__footer {
   width: 90%;
 }
